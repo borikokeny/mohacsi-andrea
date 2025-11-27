@@ -25,6 +25,7 @@ export default function Home() {
   return (
     <div>
       <h1>{page.fields.title}</h1>
+      <h1 className="text-4xl font-bold text-red-600">Tailwind működik! 🎉</h1>
       {documentToReactComponents(page.fields.tartalom)}
     </div>
   );
