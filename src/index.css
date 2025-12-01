@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ---------- GLOBAL HEADING STYLES ---------- */
+h1, h2, h3, h4, h5, h6, a {
+  @apply font-aboreto;
+}
+
+/* ---------- GLOBAL TEXT STYLES ---------- */
+p, button, span, input, label, li {
+  @apply font-quicksand;
+}

@@ -1,6 +1,14 @@
 import { client } from "../services/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import Plant from "../images/Plant.jpg";
+import Portre from "../images/Portre.jpg";
+import Part from "../images/Part.jpg";
+import Pafrany from "../images/Pafrany.jpg";
+import Folyo from "../images/Folyo.jpg";
+import Erdo from "../images/Erdo.jpg";
+import Hullam from "../images/Hullam.jpg";
 
 export default function Home() {
   const [page, setPage] = useState<any>(null);
@@ -23,10 +31,171 @@ export default function Home() {
   if (!page) return <div>Loading...</div>;
 
   return (
-    <div>
-      <h1>{page.fields.title}</h1>
-      <h1 className="text-4xl font-bold text-red-600">Tailwind működik! 🎉</h1>
+    <div className="">
       {documentToReactComponents(page.fields.tartalom)}
+      <div className="flex flex-col md:flex-row">
+        <div className="col-6 bg-heromenta w-1/2 flex flex-col items-center justify-center text-center p-8">
+          <h1 className="text-2xl">Hidak Önmagunkhoz</h1>
+          <p className="">
+            Csoportos és egyéni foglalkozásaink segítségével kapcsolódhatsz
+            saját életedhez, ránézhetsz élethelyzeteidre. Mindezt egy közösen
+            létrehozott, biztonságos térben
+          </p>
+        </div>
+        <div className="col-6 w-1/2">
+          <img src={Plant} alt="" />
+        </div>
+      </div>
+      <section className="w-5/6 mx-auto bg-gray-100 py-16 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-gray-600 italic mb-2">Rólam</p>
+
+          <h2 className="text-3xl font-semibold mb-6">Mohácsi Andrea</h2>
+
+          <p className="text-gray-700 leading-relaxed mb-10">
+            Van benned egy belső térkép. Néha elmosódottak rajta az utak, máskor
+            tisztán kirajzolódik, merre tovább. Van, hogy új ösvényeket keresel,
+            máskor eltévedsz a megszokott minták között. Hogyan igazodunk el
+            önmagunkban, kapcsolatainkban, életünkben, a világban?
+          </p>
+          <Link to="/about" className="border-2 w-80 p-2 px-4 mt-3">
+            Tovább &gt;
+          </Link>
+
+          {/* <p className="text-gray-500 mb-10">-----&gt;</p> */}
+
+          <div className="flex justify-center mt-4">
+            <img
+              src={Portre}
+              alt="Mohácsi Andrea"
+              className="w-full max-w-md rounded-lg shadow-md object-cover"
+            />
+          </div>
+        </div>
+      </section>
+      <div className="w-5/6 mx-auto flex flex-col md:flex-row justify-center gap-6 mt-4">
+        <div className="bg-herogray md:w-1/3 w-full flex flex-col items-center justify-center text-center p-8 rounded">
+          <h2 className="font-bold mb-3">EGYÉNI ÜLÉSEK</h2>
+          <p className="mb-4">
+            Biztonságos, személyre szabott tér, ahol saját belső folyamataidra
+            figyelhetsz, és támogatást kapsz az életedben zajló helyzetek
+            megértéséhez és átdolgozásához.
+          </p>
+          <Link
+            to="/individual"
+            className="bg-herodarkseablue text-white w-1/2 p-2 px-4 mt-3"
+          >
+            tovább &gt;
+          </Link>
+        </div>
+
+        <div className="bg-heroturquoise md:w-1/3 w-full flex flex-col items-center justify-center text-center p-8 rounded">
+          <h2 className="font-bold mb-3">ONLINE ÜLÉSEK</h2>
+          <p className="mb-4">
+            Rugalmasságot adó, biztonságos online találkozók, ahol ugyanúgy
+            kapcsolódhatsz önmagadhoz és a kísérés folyamathoz, mintha
+            személyesen találkoznánk.
+          </p>
+          <Link
+            to="/individual"
+            className="bg-herodarkseablue text-white w-1/2 p-2 px-4 mt-3"
+          >
+            tovább &gt;
+          </Link>
+        </div>
+
+        <div className="bg-heroseablue md:w-1/3 w-full flex flex-col items-center justify-center text-center p-8 rounded">
+          <h2 className="font-bold mb-3">ÖNISMERETI CSOPORTOK</h2>
+          <p className="mb-4">
+            Megosztó, elfogadó közösségi tér, ahol mások történetein és közös
+            gyakorlatokon keresztül mélyebb rálátást szerezhetsz saját mintáidra
+            és kapcsolódásaidra.
+          </p>
+          <Link
+            to="/group"
+            className="bg-herodarkseablue text-white w-1/2 p-2 px-4 mt-3"
+          >
+            tovább &gt;
+          </Link>
+        </div>
+      </div>
+      <section className="bg-gray-100 py-16 px-4">
+        <h2 className="text-center italic text-xl mb-10">Módszereim</h2>
+
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {/* 1. Rogers */}
+          <div className="bg-white shadow-sm">
+            <img
+              src={Plant}
+              alt="Rogersi segítő beszélgetés"
+              className="w-full h-32 object-cover"
+            />
+            <div className="p-6 text-center">
+              <p className="text-xl">Rogersi segítő beszélgetés</p>
+            </div>
+          </div>
+
+          {/* 2. Meseterápia */}
+          <div className="bg-white shadow-sm">
+            <img
+              src={Hullam}
+              alt="Meseterápia"
+              className="w-full h-32 object-cover"
+            />
+            <div className="p-6 text-center">
+              <p className="text-xl">Meseterápia</p>
+            </div>
+          </div>
+
+          {/* 3. Testorientált módszerek */}
+          <div className="bg-white shadow-sm">
+            <img
+              src={Part}
+              alt="Testorientált módszerek"
+              className="w-full h-32 object-cover"
+            />
+            <div className="p-6 text-center">
+              <p className="text-xl">Testorientált módszerek</p>
+            </div>
+          </div>
+
+          {/* 4. Családállítás */}
+          <div className="bg-white shadow-sm">
+            <img
+              src={Pafrany}
+              alt="Családállítás"
+              className="w-full h-32 object-cover"
+            />
+            <div className="p-6 text-center">
+              <p className="text-xl">Családállítás</p>
+            </div>
+          </div>
+
+          {/* 5. Pszichodráma */}
+          <div className="bg-white shadow-sm">
+            <img
+              src={Erdo}
+              alt="Pszichodráma"
+              className="w-full h-32 object-cover"
+            />
+            <div className="p-6 text-center">
+              <p className="text-xl">Pszichodráma</p>
+            </div>
+          </div>
+
+          {/* 6. Monodráma */}
+          <div className="bg-white shadow-sm">
+            <img
+              src={Folyo}
+              alt="Monodráma"
+              className="w-full h-32 object-cover"
+            />
+            <div className="p-6 text-center">
+              <p className="text-xl">Monodráma</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

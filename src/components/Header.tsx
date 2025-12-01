@@ -6,10 +6,10 @@ export default function Header() {
     <header className="bg-white font-aboreto shadow-sm sticky top-0 z-50">
       <div className="container flex items-center justify-between py-4">
          <Link to="/" className="flex-shrink-0">
-          <img src={Logo} alt="Logo" className="w-16 logo" />
+          <img src={Logo} alt="Logo" className="w-16 logo ml-3" />
         </Link>
-        <Link to="/" className="text-xl font-semibold text-primary">
-          Mohácsi Andrea
+        <Link to="/" className="text-xl font-semibold text-primary"><h1>Mohácsi Andrea</h1>
+          
         </Link>
         {/* NAV LINKS */}
         <nav className="flex gap-6 text-sm font-medium">
@@ -40,7 +40,7 @@ export default function Header() {
             Egyéni
           </NavLink>
           <NavLink
-            to="/about"
+            to="/group"
             className={({ isActive }) =>
               isActive ? "text-primary font-semibold" : "hover:text-primary"
             }
