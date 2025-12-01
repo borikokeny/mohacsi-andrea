@@ -1,10 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
+import Logo from "../images/Logo.png";
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white font-aboreto shadow-sm sticky top-0 z-50">
       <div className="container flex items-center justify-between py-4">
-        {/* LOGO */}
+         <Link to="/" className="flex-shrink-0">
+          <img src={Logo} alt="Logo" className="w-16 logo" />
+        </Link>
         <Link to="/" className="text-xl font-semibold text-primary">
           Mohácsi Andrea
         </Link>
