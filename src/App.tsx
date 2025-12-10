@@ -6,6 +6,9 @@ import Individual from "./pages/Individual.js";
 import Group from "./pages/Group.js";
 import Latest from "./pages/Latest.js";
 import Contact from "./pages/Contact.js";
+import Terkepeink from "./pages/Terkepeink.js";
+import BelsoTajakon from "./pages/BelsoTajakon.js";
+import MesejaroTerkep from "./pages/MesejaroTerkep.js";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +20,9 @@ const router = createBrowserRouter([
       { path: "/group", element: <Group />},
       { path: "/latest", element: <Latest />},
       { path: "/contact", element: <Contact /> },
+      { path: "/terkepeink", element: <Terkepeink /> },
+      { path: "/belso-tajakon", element: <BelsoTajakon /> },
+      { path: "/mesejaro-terkep", element: <MesejaroTerkep /> },
     ],
   },
 ]);

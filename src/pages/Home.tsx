@@ -11,7 +11,6 @@ import Erdo from "../images/Erdo.jpg";
 import Hullam from "../images/Hullam.jpg";
 import Terepauta from "../images/terepauta.jpg";
 import Csillag from "../images/kiscsillag.png";
-import Logo from "../images/Logo.png";
 
 
 export default function Home() {
