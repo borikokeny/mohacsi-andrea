@@ -1,7 +1,7 @@
 import { client } from "../services/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Plant from "../images/Plant.jpg";
 import Portre from "../images/Portre.jpg";
 import Part from "../images/Part.jpg";
@@ -9,6 +9,10 @@ import Pafrany from "../images/Pafrany.jpg";
 import Folyo from "../images/Folyo.jpg";
 import Erdo from "../images/Erdo.jpg";
 import Hullam from "../images/Hullam.jpg";
+import Terepauta from "../images/terepauta.jpg";
+import Csillag from "../images/kiscsillag.png";
+import Logo from "../images/Logo.png";
+
 
 export default function Home() {
   const [page, setPage] = useState<any>(null);
@@ -32,20 +36,65 @@ export default function Home() {
 
   return (
     <div className="">
-      {documentToReactComponents(page.fields.tartalom)}
+      {/* <h1>{page.fields.heroTitle}</h1>
+      {documentToReactComponents(page.fields.tartalom)} */}
       <div className="flex flex-col md:flex-row">
+          <div className=" bg-heroseablue w-1/2 flex justify-center items-center p-12">
+            <img
+              src={Portre}
+              alt="portrait"
+              className="w-full h-full object-cover"
+            />
+        </div>
+        {/* <div className="col-6 w-1/2">
+          <img src={Plant} alt="" />
+        </div> */}
         <div className="col-6 bg-heromenta w-1/2 flex flex-col items-center justify-center text-center p-8">
-          <h1 className="text-2xl">Hidak Önmagunkhoz</h1>
-          <p className="">
+          {/* <h1 className="text-2xl">Hidak Önmagunkhoz</h1> */}
+          <img src={Csillag} alt="" className="w-16 mb-3"/>
+          <h1 className="text-2xl">Mohácsi Andrea</h1>
+          <h2 className="mb-6">integrál szemléletű mentálhigiénés szakember</h2>
+          {/* <p className="">
             Csoportos és egyéni foglalkozásaink segítségével kapcsolódhatsz
             saját életedhez, ránézhetsz élethelyzeteidre. Mindezt egy közösen
             létrehozott, biztonságos térben
+          </p> */}
+          {/* <p className="">{documentToReactComponents(page.fields.tartalom)}</p> */}
+          <p className="mb-8">
+            "Életünk során bármikor kerülhetünk olyan élethelyzetbe, amikor úgy
+            érezzük, egyedül nehéz megbirkózni problémáinkkal, képtelenek
+            vagyunk objektíven rálátni saját magunkra, felgöngyölíteni a
+            miérteket. Amennyiben úgy érzed, a négyszemközti beszélgetés
+            segítene problémáid leküzdésében, várlak sok szeretettel egy egyéni
+            segítő beszélgetésre." (Simon Dóri)
           </p>
+          <Link to="/individual" className="border-2 w-80 p-2 px-4 mt-3">
+            Tudj meg többet az egyéni foglalkozásról &gt;
+          </Link>
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row">
+        <div className="col-6 bg-heromenta w-1/2 flex flex-col items-center justify-center text-center p-8">
+          {/* <h1 className="text-2xl">Hidak Önmagunkhoz</h1> */}
+          <img src={Csillag} alt="" className="w-16 mb-3"/>
+          <h1 className="text-4xl mb-2">{page.fields.heroTitle}</h1>
+        
+          <h2 className="mb-8">Pszihodráma Önismereti Csoportok</h2>
+            <p className="">
+            Csoportos foglalkozásaink segítségével kapcsolódhatsz
+            saját életedhez, ránézhetsz élethelyzeteidre. Mindezt egy közösen
+            létrehozott, biztonságos térben
+          </p>
+          <Link to="/group" className="border-2 w-80 p-2 px-4 mt-3">
+            Tudj meg többet a csoportokról &gt;
+          </Link>
+          {/* <p className="">{documentToReactComponents(page.fields.tartalom)}</p> */}
         </div>
         <div className="col-6 w-1/2">
           <img src={Plant} alt="" />
         </div>
       </div>
+
       <section className="w-5/6 mx-auto bg-gray-100 py-16 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-gray-600 italic mb-2">Rólam</p>
@@ -66,7 +115,7 @@ export default function Home() {
 
           <div className="flex justify-center mt-4">
             <img
-              src={Portre}
+              src={Terepauta}
               alt="Mohácsi Andrea"
               className="w-full max-w-md rounded-lg shadow-md object-cover"
             />
