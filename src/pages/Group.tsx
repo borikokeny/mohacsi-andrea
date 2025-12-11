@@ -289,6 +289,7 @@ export default function Group() {
 
       {/* ---------------- LEÍRÁS ---------------- */}
       <section className="space-y-4 mb-10">
+        <h1 className="text-4xl font-semibold">Hidak Önmagunkhoz</h1>
         <h2 className="text-2xl font-semibold">Pszichodráma Csoportok</h2>
 
         <h3 className="text-lg">
