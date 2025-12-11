@@ -72,7 +72,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row mb-3">
         <div className="col-6 bg-heromenta w-1/2 flex flex-col items-center justify-center text-center p-8">
           {/* <h1 className="text-2xl">Hidak Önmagunkhoz</h1> */}
           <img src={Csillag} alt="" className="w-16 mb-3"/>

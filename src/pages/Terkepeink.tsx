@@ -1,3 +1,3 @@
 export default function Terkepeink() {
-  return <h1>Aktuális oldal – az újdonságok kerülnek ide</h1>;
+  return <h1>Terkepeink oldal</h1>;
 }
