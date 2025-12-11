@@ -34,7 +34,7 @@ export default function Home() {
   if (!page) return <div>Loading...</div>;
 
   return (
-    <div className="">
+    <div className="max-w-6xl mx-auto px-4">
       {/* <h1>{page.fields.heroTitle}</h1>
       {documentToReactComponents(page.fields.tartalom)} */}
       <div className="flex flex-col md:flex-row">

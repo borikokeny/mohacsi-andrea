@@ -4,7 +4,7 @@ import Logo from "../images/Logo.png";
 export default function Header() {
   return (
     <header className="bg-white font-aboreto shadow-sm sticky top-0 z-50">
-      <div className="container flex items-center justify-between py-4">
+      <div className="max-w-6xl mx-auto px-4 flex items-center justify-between py-4">
         <Link to="/" className="flex-shrink-0">
           <img src={Logo} alt="Logo" className="w-16 logo ml-3" />
         </Link>
