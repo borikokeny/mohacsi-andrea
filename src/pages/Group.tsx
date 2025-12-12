@@ -73,8 +73,7 @@
 //           </div>
 
 //         </div>
-        
-      
+
 //       </div>
 //       </div> */}
 
@@ -232,6 +231,7 @@ import { client } from "../services/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import MintChecklist from "../components/MintChecklist";
 
 import Pafrany from "../images/Pafrany.jpg";
 import Folyo from "../images/Folyo.jpg";
@@ -260,10 +260,8 @@ export default function Group() {
 
   return (
     <div className="max-w-6xl mx-auto px-4">
-
       {/* ---------------- HERO SZEKCIÓ ---------------- */}
       <div className="relative h-96 rounded-md overflow-hidden mb-10">
-
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${Pafrany})` }}
@@ -304,8 +302,8 @@ export default function Group() {
 
         <p>
           Csoportunk ebben az úton levésben kísér – hogy ne csak elindulj, de
-          meg is érkezz önmagadhoz. A csoport biztonságos, megtartó tér, ahol
-          új mintákat és megoldásokat próbálhatsz ki.
+          meg is érkezz önmagadhoz. A csoport biztonságos, megtartó tér, ahol új
+          mintákat és megoldásokat próbálhatsz ki.
         </p>
 
         <p>
@@ -315,8 +313,8 @@ export default function Group() {
           <strong>Helyszín: </strong> Budapest (jól megközelíthető helyen)
         </p>
         <p>
-          <strong>Csoportok: </strong> 10–12 fős csoportok, előzetes ismeret
-          nem szükséges.
+          <strong>Csoportok: </strong> 10–12 fős csoportok, előzetes ismeret nem
+          szükséges.
         </p>
       </section>
 
@@ -328,36 +326,42 @@ export default function Group() {
           <li className="flex gap-3">
             <span className="text-heromenta font-bold">1.</span>
             <p>
-              A csoportba való bekerülést díjmentes személyes egyéni
-              beszélgetés előzi meg: ismerkedés, kérdések tisztázása,
-              közös munka előkészítése.
+              A csoportba való bekerülést díjmentes személyes egyéni beszélgetés
+              előzi meg: ismerkedés, kérdések tisztázása, közös munka
+              előkészítése.
             </p>
           </li>
 
           <li className="flex gap-3">
             <span className="text-heromenta font-bold">2.</span>
             <p>
-              Az első két alkalom nyitott, a második alkalmon történik
-              az elköteleződés, utána zárt csoportként működünk.
+              Az első két alkalom nyitott, a második alkalmon történik az
+              elköteleződés, utána zárt csoportként működünk.
             </p>
           </li>
 
           <li className="flex gap-3">
             <span className="text-heromenta font-bold">3.</span>
             <p>
-              A találkozások 3 hetente zajlanak, fokozatosan mélyülő
-              önismereti folyamattal.
+              A találkozások 3 hetente zajlanak, fokozatosan mélyülő önismereti
+              folyamattal.
             </p>
           </li>
 
           <li className="flex gap-3">
             <span className="text-heromenta font-bold">4.</span>
             <p>
-              A 18. alkalmon lezárjuk a folyamatot és összefoglaljuk az
-              együtt végzett munkát.
+              A 18. alkalmon lezárjuk a folyamatot és összefoglaljuk az együtt
+              végzett munkát.
             </p>
           </li>
         </ol>
+      </section>
+
+      {/* ---------------- KINEK AJÁNLJUK ---------------- */}
+      <section className="mb-10">
+        <h3 className="font-semibold mb-4">Várunk téged, ha</h3>
+        <MintChecklist />
       </section>
 
       {/* ---------------- JELENTKEZÉS ---------------- */}
@@ -368,27 +372,73 @@ export default function Group() {
           <li>e-mail: terkeponmagamhoz@gmail.com</li>
           <li>telefon: Mohácsi Andrea – 30/383-9838</li>
           <li>
-            Ha emailt írsz, adj meg pár információt magadról és
-            feltétlenül telefonszámot.
+            Ha emailt írsz, adj meg pár információt magadról és feltétlenül
+            telefonszámot.
           </li>
           <li>
-            Kövess minket {" "}
-  <a
-    href="https://www.facebook.com/profile.php?id=100090615291518" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-quicksand text-blue-600 hover:underline"
-  >
-    Facebook
-  </a>
-  {" "}oldalunkon a friss információkért!
+            Kövess minket{" "}
+            <a
+              href="https://www.facebook.com/profile.php?id=100090615291518"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-quicksand text-blue-600 hover:underline"
+            >
+              Facebook
+            </a>{" "}
+            oldalunkon a friss információkért!
+          </li>
+          <li>
+            Ha szeretnél a hírlevelünkre feliratkozni, kattints{" "}
+            <a
+              href="/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-quicksand text-blue-600 hover:underline"
+            >
+              ide
+            </a>{" "}
+            !
           </li>
         </ul>
       </section>
+<section className="max-w-6xl mx-auto px-4 py-16">
+  <h2 className="text-4xl font-aboreto mb-12">Rólam mondták</h2>
+
+  <div className="grid md:grid-cols-3 gap-12 text-herodarkseablue">
+    {/* 1. vélemény */}
+    <div>
+      <p className="text-lg leading-relaxed">
+        "Andrea jelenléte biztonságot ad, vele könnyű megnyílni. 
+        A közös munkánk során olyan felismerésekhez jutottam, 
+        amelyek alapjaiban változtatták meg az életemhez való hozzáállásom."
+      </p>
+      <p className="mt-6 font-semibold">Katalin M.</p>
+    </div>
+
+    {/* 2. vélemény */}
+    <div>
+      <p className="text-lg leading-relaxed">
+        "A csoport légköre Andrea mellett támogató és megtartó. 
+        Mindig figyelmes, pontosan kérdez, és segít meglátni az összefüggéseket, 
+        amiket egyedül nem vettem volna észre."
+      </p>
+      <p className="mt-6 font-semibold">Dávid P.</p>
+    </div>
+
+    {/* 3. vélemény */}
+    <div>
+      <p className="text-lg leading-relaxed">
+        "A pszichodráma alkalmakon Andrea finoman, mégis határozottan vezetett. 
+        Felszabadító élmény volt olyan helyzeteket megélni és átírni, 
+        amelyek régóta bennem voltak. Hálás vagyok az egész folyamatért."
+      </p>
+      <p className="mt-6 font-semibold">Eszter L.</p>
+    </div>
+  </div>
+</section>
 
       {/* ---------------- KÁRTYÁK RÉSZ ---------------- */}
       <section className="space-y-10">
-
         {/* 1. Kártya */}
         <Card
           image={Folyo}
@@ -417,6 +467,16 @@ export default function Group() {
           link="/mesejaro-terkep"
         />
       </section>
+      <section className="mt-4">
+        <p>
+          <strong>Gyakran ismételt kérdések</strong>
+        </p>
+        <div className="ms-6">
+          <li>Lemondási feltételek</li>
+          <li>Fizetési módok</li>
+          <li>Bővebben a pszihodrámáról</li>
+        </div>
+      </section>
     </div>
   );
 }
@@ -426,7 +486,11 @@ export default function Group() {
 ---------------------------------------------- */
 function Card({ image, title, subtitle, date, link, reversed = false }) {
   return (
-    <div className={`flex flex-col md:flex-row ${reversed ? "md:flex-row-reverse" : ""}`}>
+    <div
+      className={`flex flex-col md:flex-row ${
+        reversed ? "md:flex-row-reverse" : ""
+      }`}
+    >
       <div className="md:w-1/2 h-64 md:h-auto">
         <img src={image} className="w-full h-full object-cover" alt="" />
       </div>

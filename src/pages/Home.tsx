@@ -67,8 +67,7 @@ export default function Home() {
             segítene problémáid leküzdésében, várlak sok szeretettel egy egyéni
             segítő beszélgetésre." (Simon Dóri)
           </p>
-          <Link to="/individual" className="border-2 w-80 p-2 px-4 mt-3">
-            Tudj meg többet az egyéni foglalkozásról &gt;
+          <Link to="/individual" className="border-2 w-80 p-2 px-4 mt-3"><strong>Tudj meg többet az egyéni foglalkozásról &gt;</strong>
           </Link>
         </div>
       </div>
@@ -84,8 +83,7 @@ export default function Home() {
             saját életedhez, ránézhetsz élethelyzeteidre. Mindezt egy közösen
             létrehozott, biztonságos térben
           </p>
-          <Link to="/group" className="border-2 w-80 p-2 px-4 mt-3">
-            Tudj meg többet a csoportokról &gt;
+          <Link to="/group" className="border-2 w-80 p-2 px-4 mt-3"><strong>Tudj meg többet a csoportokról &gt;</strong>
           </Link>
           {/* <p className="">{documentToReactComponents(page.fields.tartalom)}</p> */}
         </div>
