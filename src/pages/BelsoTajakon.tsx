@@ -113,30 +113,30 @@ export default function BelsoTajakon() {
           </div> */}
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-    {[
-      "2026.03.25.",
-      "2026.04.25.",
-      "2026.05.25.",
-      "2026.06.25.",
-      "2026.07.25.",
-      "2026.08.12.",
-      "2026.09.08.",
-      "2026.10.13.",
-      "2026.11.24.",
-      "2026.12.28.",
-      "2027.01.28.",
-      "2027.02.25.",
-      "2027.03.23.",
-      "2027.04.13.",
-      "2027.05.29.",
-      "2027.06.26.",
-      "2027.08.17.",
-      "2027.09.14.",
-      "2027.10.06.",
-    ].map((date, i) => (
-      <p key={i}>{date}</p>
-    ))}
-  </div>
+            {[
+              "2026.03.25.",
+              "2026.04.25.",
+              "2026.05.25.",
+              "2026.06.25.",
+              "2026.07.25.",
+              "2026.08.12.",
+              "2026.09.08.",
+              "2026.10.13.",
+              "2026.11.24.",
+              "2026.12.28.",
+              "2027.01.28.",
+              "2027.02.25.",
+              "2027.03.23.",
+              "2027.04.13.",
+              "2027.05.29.",
+              "2027.06.26.",
+              "2027.08.17.",
+              "2027.09.14.",
+              "2027.10.06.",
+            ].map((date, i) => (
+              <p key={i}>{date}</p>
+            ))}
+          </div>
         </div>
 
         <p>
@@ -152,6 +152,21 @@ export default function BelsoTajakon() {
         <p>
           <strong>Csoportok: </strong> 10–12 fős csoportok, előzetes ismeret nem
           szükséges.
+        </p>
+        <p>
+          <strong>Csoportvezetők: </strong>
+          <div className="ms-6 mt-1">
+            <li>
+              {" "}
+              <strong>Mezey Anikó</strong>– kommunikációs tréner, coach, képzett
+              családállító
+            </li>
+            <li>
+              <strong>Mohácsi Andrea</strong>– integrál szemléletű
+              mentálhigiénés szakember, Metamorphoses meseterapeuta, Integrative
+              Core Dynamics szakember, képzett családállító
+            </li>
+          </div>
         </p>
       </section>
 
@@ -201,42 +216,16 @@ export default function BelsoTajakon() {
 
         <ul className="list-disc list-inside space-y-1">
           <li>e-mail: terkeponmagamhoz@gmail.com</li>
-          <li>telefon: Mohácsi Andrea – 30/383-9838</li>
+          <li>Mohácsi Andrea – 30/383-9838, Mezey Anikó 30/991-1849</li>
           <li>
             Ha emailt írsz, adj meg pár információt magadról és feltétlenül
             telefonszámot.
           </li>
         </ul>
       </section>
-      <h4>Szórólap letöltése: </h4>
-    </div>
-  );
-}
-
-/* ---------------------------------------------  
-   KÁRTYA KOMPONENS  
----------------------------------------------- */
-function Card({ image, title, subtitle, date, link, reversed = false }) {
-  return (
-    <div
-      className={`flex flex-col md:flex-row ${
-        reversed ? "md:flex-row-reverse" : ""
-      }`}
-    >
-      <div className="md:w-1/2 h-64 md:h-auto">
-        <img src={image} className="w-full h-full object-cover" alt="" />
-      </div>
-
-      <div className="md:w-1/2 bg-heromenta flex flex-col items-center justify-center text-center p-10">
-        <img src={Csillag} alt="" className="w-16 mb-3" />
-        <h2 className="text-4xl mb-2">{title}</h2>
-        <h3 className="mb-3">{subtitle}</h3>
-        <p>{date}</p>
-
-        <Link to={link} className="border-2 w-64 p-2 px-4 mt-4">
-          Részletek &gt;
-        </Link>
-      </div>
+      <Link to="" className="underline text-blue-600">
+        Szórólap letöltése
+      </Link>
     </div>
   );
 }

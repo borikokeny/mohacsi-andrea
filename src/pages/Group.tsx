@@ -371,6 +371,18 @@ export default function Group() {
             Ha emailt írsz, adj meg pár információt magadról és
             feltétlenül telefonszámot.
           </li>
+          <li>
+            Kövess minket {" "}
+  <a
+    href="https://www.facebook.com/profile.php?id=100090615291518" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-quicksand text-blue-600 hover:underline"
+  >
+    Facebook
+  </a>
+  {" "}oldalunkon a friss információkért!
+          </li>
         </ul>
       </section>
 
