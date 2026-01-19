@@ -59,13 +59,18 @@ export default function Home() {
             létrehozott, biztonságos térben
           </p> */}
           {/* <p className="">{documentToReactComponents(page.fields.tartalom)}</p> */}
-          <p className="mb-8">
+          {/* <p className="mb-8">
             "Életünk során bármikor kerülhetünk olyan élethelyzetbe, amikor úgy
             érezzük, egyedül nehéz megbirkózni problémáinkkal, képtelenek
             vagyunk objektíven rálátni saját magunkra, felgöngyölíteni a
             miérteket. Amennyiben úgy érzed, a négyszemközti beszélgetés
             segítene problémáid leküzdésében, várlak sok szeretettel egy egyéni
             segítő beszélgetésre." (Simon Dóri)
+          </p> */}
+          <p className="mb-8">
+            Munkám középpontjában az áll, hogy az ember újra kapcsolatba kerülhessen önmagával - nem idealizált, nem „megjavított”, hanem valóságos formájában.
+Azokkal dolgozom, akik érzik, hogy valami elakadt, de nem gyors megoldásokat keresnek, hanem mélyebb megértést, belső stabilitást és biztonságos kísérést.
+Integratív szemlélettel kísérem a folyamatokat, ahol helye van az érzelmeknek, a test jelzéseinek, a belső történeteknek és a csendnek is. Küldetésem, hogy hidakat építsek a belső világunk szétszakadt részei között - mert az egészség nem tökéletességet, hanem kapcsolódást jelent.  
           </p>
           <Link to="/individual" className="border-2 w-80 p-2 px-4 mt-3"><strong>Tudj meg többet az egyéni foglalkozásról &gt;</strong>
           </Link>
