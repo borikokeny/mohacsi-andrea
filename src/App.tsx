@@ -10,6 +10,7 @@ import GroupDetails from "./pages/GroupDetails.js";
 import Terkepeink from "./pages/Terkepeink.js";
 import BelsoTajakon from "./pages/BelsoTajakon.js";
 import MesejaroTerkep from "./pages/MesejaroTerkep.js";
+import "./App.css";
 
 const router = createBrowserRouter([
   {
