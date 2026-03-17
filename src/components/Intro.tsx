@@ -17,7 +17,7 @@ export default function Intro() {
 Megtartó tér az önismerethez, kapcsolódáshoz és belső változáshoz. Megtartó tér önmagad felé.
           </p>
 
-          <Link to="/booking" className="inline-block border border-gray-500 rounded-full px-6 py-3 text-sm hover:bg-gray-200 transition">
+          <Link to="/contact" className="inline-block border border-gray-500 rounded-full px-6 py-3 text-sm hover:bg-gray-200 transition">
             Időpontfoglalás
           </Link>
         </div>

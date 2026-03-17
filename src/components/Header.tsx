@@ -17,9 +17,9 @@ export default function Header() {
 
         {/* LOGO / TITLE */}
         <Link to="/" className="text-center">
-          <h1 className="text-3xl tracking-wide">Mohácsi Andrea</h1>
+          <h1 className="text-3xl tracking-wide">Hidak Önmagunkhoz</h1>
           <p className="text-xs tracking-[0.2em] mt-1 text-gray-500">
-            Integrál szemléletű mentálhigiénés stúdió
+            Mohácsi Andrea szakmai oldala
           </p>
         </Link>
 

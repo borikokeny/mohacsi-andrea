@@ -228,7 +228,7 @@
 // }
 
 import { client } from "../services/contentful";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+// import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import MintChecklist from "../components/MintChecklist";

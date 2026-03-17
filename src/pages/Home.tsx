@@ -1,20 +1,20 @@
 import { client } from "../services/contentful";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+// import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { useEffect, useState } from "react";
 import Hero from "../components/Hero";
 import Intro from "../components/Intro";
-import Stua_med_sofa from "../images/Stua_med_sofa.jpg";
-import Stua from "../images/Stua.jpg";
-import { Link } from "react-router-dom";
-import Plant from "../images/Plant.jpg";
-import Portre from "../images/Portre.jpg";
-import Part from "../images/Part.jpg";
-import Pafrany from "../images/Pafrany.jpg";
-import Folyo from "../images/Folyo.jpg";
-import Erdo from "../images/Erdo.jpg";
-import Hullam from "../images/Hullam.jpg";
-import Terepauta from "../images/terepauta.jpg";
-import Csillag from "../images/kiscsillag.png";
+// import Stua_med_sofa from "../images/Stua_med_sofa.jpg";
+// import Stua from "../images/Stua.jpg";
+// import { Link } from "react-router-dom";
+// import Plant from "../images/Plant.jpg";
+// import Portre from "../images/Portre.jpg";
+// import Part from "../images/Part.jpg";
+// import Pafrany from "../images/Pafrany.jpg";
+// import Folyo from "../images/Folyo.jpg";
+// import Erdo from "../images/Erdo.jpg";
+// import Hullam from "../images/Hullam.jpg";
+// import Terepauta from "../images/terepauta.jpg";
+// import Csillag from "../images/kiscsillag.png";
 
 
 export default function Home() {

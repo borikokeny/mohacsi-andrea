@@ -11,9 +11,9 @@ import Trans_line_logo_2 from "../images/Trans_line_logo_2.png";
 export default function Hero() {
   return (
     <section
-      className="relative w-full h-[100vh] bg-cover bg-center flex items-center justify-center"
+      className="relative w-full h-[50vh] bg-cover bg-center flex items-center justify-center"
       style={{
-        backgroundImage: `url(${Round_leafs})`,
+        backgroundImage: `url(${Mountains})`,
       }}
     >
       {/* overlay */}
@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="relative text-center text-white max-w-2xl px-4">
         <img src={Trans_line_logo_2} alt="Line Logo" className="w-24 invert mx-auto mb-4 brightness-200 contrast-200 pb-4" />
         <h2 className="text-4xl md:text-5xl font-light leading-tight">
-          Integrál szemléletű mentálhigiénés stúdió
+          Integrál Szemléletű Mentálhigiénés Stúdió
         </h2>
 
         <Link to="/about" className="inline-block mt-6 bg-white text-gray-800 px-6 py-3 rounded-full text-sm hover:bg-gray-200 transition">
