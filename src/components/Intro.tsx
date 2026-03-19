@@ -9,16 +9,15 @@ export default function Intro() {
         {/* TEXT */}
         <div>
           <h3 className="text-2xl mb-6 tracking-wide">
-            Találd meg a gyógyuláshoz vezető utadat
+            Hogyan dolgozom?
           </h3>
 
           <p className="text-gray-700 leading-relaxed mb-6">
-            Egyéni és csoportos folyamatok kísérése integratív szemléletben, biztonságban kapcsolódva.
-Megtartó tér az önismerethez, kapcsolódáshoz és belső változáshoz. Megtartó tér önmagad felé.
+            A küldetésem, hogy biztonságos teret tartsak és jelenléttel kísérjem azokat, akik elakadtak, kérdéseken, figyelmen és lassításon keresztül, hogy újra kapcsolódni tudjanak önmagukhoz, a testükhöz, az érzéseikhez és a belső történeteikhez, ezáltal érjék el a kiegyensúlyozottságot.
           </p>
 
           <Link to="/booking" className="inline-block border border-gray-500 rounded-full px-6 py-3 text-sm hover:bg-gray-200 transition">
-            Időpontfoglalás
+            Rólam bővebben
           </Link>
         </div>
 
