@@ -6,7 +6,8 @@ import Individual from "./pages/Individual.js";
 import Group from "./pages/Group.js";
 import Latest from "./pages/Latest.js";
 import Contact from "./pages/Contact.js";
-import GroupDetails from "./pages/GroupDetails.js";
+// import GroupDetails from "./pages/GroupDetails.js";
+import GroupDetailPage from "./pages/GroupDetailPage.js";
 import Terkepeink from "./pages/Terkepeink.js";
 import BelsoTajakon from "./pages/BelsoTajakon.js";
 import MesejaroTerkep from "./pages/MesejaroTerkep.js";
@@ -20,12 +21,14 @@ const router = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/individual", element: <Individual />},
       { path: "/group", element: <Group /> },
+      { path: "/group/:slug", element: <GroupDetailPage /> },
       { path: "/latest", element: <Latest /> },
       { path: "/contact", element: <Contact /> },
       // { path: "/group/:slug", element: <GroupDetails /> }
       { path: "/terkepeink", element: <Terkepeink /> },
       { path: "/belso-tajakon", element: <BelsoTajakon /> },
       { path: "/mesejaro-terkep", element: <MesejaroTerkep /> },
+      { path: "*", element: <div>Not found</div> },
     ],
   },
 ]);

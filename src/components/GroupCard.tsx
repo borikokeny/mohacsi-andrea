@@ -48,7 +48,11 @@ export default function GroupCard({
 
   return (
     <div
-      onClick={() => navigate(`/csoportok/${slug}`)}
+    onClick={() => {
+  console.log("CLICK", slug);
+  navigate(`/group/${slug}`);
+}}
+      // onClick={() => navigate(`/group/${slug}`)}
       className="cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col gap-4"
     >
       {/* Status */}
@@ -75,7 +79,8 @@ export default function GroupCard({
       <button
         onClick={(e) => {
           e.stopPropagation();
-          navigate(`/csoportok/${slug}`);
+            console.log("CLICK", slug);
+          navigate(`/group/${slug}`);
         }}
         className="mt-2 bg-black text-white py-2 rounded-xl hover:bg-gray-800 transition"
       >
@@ -84,7 +89,6 @@ export default function GroupCard({
     </div>
   );
 }
-
 
 // import { useNavigate } from "react-router-dom";
 
