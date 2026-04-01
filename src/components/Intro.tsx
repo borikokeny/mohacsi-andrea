@@ -8,15 +8,18 @@ export default function Intro() {
 
         {/* TEXT */}
         <div>
-          <h3 className="text-2xl mb-6 tracking-wide">
+          {/* <h3 className="text-2xl mb-6 tracking-wide">
             Hogyan dolgozom?
+          </h3> */}
+          <h3 className="text-2xl mb-6 tracking-wide">
+            Miben tudlak támogatni?
           </h3>
 
           <p className="text-gray-700 leading-relaxed mb-6">
             A küldetésem, hogy biztonságos teret tartsak és jelenléttel kísérjem azokat, akik elakadtak, kérdéseken, figyelmen és lassításon keresztül, hogy újra kapcsolódni tudjanak önmagukhoz, a testükhöz, az érzéseikhez és a belső történeteikhez, ezáltal érjék el a kiegyensúlyozottságot.
           </p>
 
-          <Link to="/booking" className="inline-block border border-gray-500 rounded-full px-6 py-3 text-sm hover:bg-gray-200 transition">
+          <Link to="/about" className="inline-block border border-gray-500 rounded-full px-6 py-3 text-sm hover:bg-gray-200 transition">
             Rólam bővebben
           </Link>
         </div>
