@@ -83,7 +83,7 @@ export default function Individual() {
           <ul className="space-y-2">
             <li>• megtartó jelenléttel kísérlek</li>
             <li>• segítem az egészséges felnőtt részek megerősödését</li>
-            <li>• támogatlak a belső támaszok stabilizálásában</li>
+            <li>• támogatlak abban, hogy belső támaszaid stabilabbá váljanak</li>
           </ul>
         </div>
 

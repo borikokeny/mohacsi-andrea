@@ -30,12 +30,12 @@ export default function GroupCard({
     open: {
       label: "Jelentkezhető",
       color: "bg-green-100 text-green-700",
-      button: "Jelentkezem",
+      button: "Bővebben",
     },
     soon: {
       label: "Hamarosan indul",
       color: "bg-yellow-100 text-yellow-700",
-      button: "Érdekel",
+      button: "Bővebben",
     },
     full: {
       label: "Betelt",

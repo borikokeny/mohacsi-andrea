@@ -11,7 +11,7 @@ export default function Header() {
         <div className="flex items-center gap-6">
           {/* Logo */}
           <img
-            src={Logo_color}
+            src={Logo_orig}
             alt="Mohácsi Andrea logo"
             className="w-20 h-auto object-contain"
           />

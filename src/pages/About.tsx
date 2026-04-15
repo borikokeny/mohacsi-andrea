@@ -43,7 +43,7 @@ export default function AboutPage() {
               Hogyan dolgozom
             </button>
             <button onClick={() => scrollToId("modszer")} className="chip">
-              Módszerek
+              Eszközök és megközelítések
             </button>
             <button onClick={() => scrollToId("hatter")} className="chip">
               Szakmai háttér
@@ -77,27 +77,55 @@ export default function AboutPage() {
           tér megállni, ránézni arra, ami belül történik, és mindezt nem egyedül
           kell vinni.
         </p>
-
+        <hr />
         <p>
           Egyéni és csoportos folyamatokban kísérem azokat, akik szeretnének
-          közelebb kerülni önmagukhoz, jobban érteni belső működésüket.
+          közelebb kerülni önmagukhoz, jobban érteni belső működésüket,
+          kapcsolataikat, vagy éppen egy elakadás, veszteség, változás
+          időszakában vannak vagy csak elindulnak az önismeret útján és jobban
+          szeretnék érteni mindennapi működésüket.
         </p>
+        <p></p>
       </section>
 
       {/* SZEMLÉLET */}
       <section
         id="szemlelet"
-        className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center"
+        className="max-w-3xl mx-auto px-6 py-16 space-y-6 text-lg leading-relaxed"
       >
-        <div>
-          <h2 className="text-2xl font-serif mb-4">Integratív szemlélet</h2>
-          <p className="leading-relaxed">
-            Integratív szemlélettel dolgozom, amelyben a pszichológiai
-            megközelítések, az érzelmi folyamatok, a test jelzései és a belső
-            narratívák egyaránt fontos szerepet kapnak.
-          </p>
-        </div>
-        <div className="w-full h-[300px] bg-gray-200 rounded-2xl" />
+        <h2 className="text-2xl font-serif mb-4">Integratív szemlélet</h2>
+        <p>
+          Integratív szemlélettel dolgozom, amelyben a testi érzetek, az érzelmi
+          folyamatok és a belső történetek egyaránt fontos szerepet kapnak. A
+          közös munka során a megértés, az önreflexió és a belső biztonság
+          erősítése áll a középpontban. Megtartó, elfogadó térben dolgozunk,
+          ahol a teljes ember számít – nem csak a nehézség.
+        </p>
+        <p>
+          Azok fordulnak hozzám, akik gyakran „jól működnek” a mindennapokban,
+          mégis feszültséget, ürességet vagy elakadást élnek meg. Akik sokat
+          gondolkodnak, de nehezebben férnek hozzá az érzéseikhez, vagy akik már
+          több módszert is kipróbáltak, mégsem érzik, hogy valóban közelebb
+          kerültek volna önmagukhoz.
+        </p>
+        <p>
+          A közös munkában fontos számomra a kiszámítható keret, az érzelmi
+          biztonság és az együtt gondolkodás. Nem ígérek gyors változást,
+          viszont lehetőséget kínálok arra, hogy a belső folyamatok érthetőbbé
+          és megtarthatóbbá váljanak, és fokozatosan másképp tudj jelen lenni a
+          saját életedben.
+        </p>
+        <p>
+          Van, amikor már sok mindent értünk magunkról, mégis nehéz a jelenlét,
+          a kapcsolódás a mindennapokban. Itt nem kell megfelelni. Nem kell jól
+          lenni. Nincs sietség, és nincs elvárás arra, „hol kellene tartanod”.
+          Csak jelenlét van, kísérés és megtartás.
+        </p>
+        <p>
+          Ez a tér azoknak szól, akik szeretnének hidat építeni önmaguk felé. Ha
+          olyan helyet keresel, ahol nem maradsz egyedül a mélységekben sem,
+          megérkeztél.
+        </p>
       </section>
 
       {/* HOGYAN DOLGOZOM */}
@@ -105,43 +133,53 @@ export default function AboutPage() {
         id="hogyan"
         className="max-w-3xl mx-auto px-6 py-16 text-lg leading-relaxed space-y-6"
       >
-        <h2 className="text-2xl font-serif text-center">Hogyan dolgozom?</h2>
+        {/* <h2 className="text-2xl font-serif text-center">Hogyan dolgozom?</h2> */}
+        <div className="bg-[#ece8e1] p-8 rounded-2xl text-center">
+          <h3 className="font-semibold mb-3">
+            Nem módszerekkel, hanem szemlélettel dolgozom
+          </h3>
+          {/* <p>
+            A közös munka mindig a kliens tempójához és aktuális teherbírásához
+            igazodik.
+          </p> */}
+        </div>
 
         {/* <p>
           Nem megoldásokat kínálok, hanem egy biztonságos keretet, ahol
           lehetőség van megérteni, mi történik belül.
         </p> */}
         <p>
-          A közös munka során nem megoldásokat kínálok, hanem egy olyan
-          biztonságos keretet, ahol lehetőség van megérteni, mi történik belül,
-          és hogyan kapcsolódik ez az élet aktuális élethelyzethez.{" "}
+          Munkámban nem egyetlen módszer áll a középpontban, hanem az ember. Az
+          integratív szemlélet számomra azt jelenti, hogy a belső folyamatokat
+          több nézőpontból, egymással összefüggésben vizsgáljuk: érzelmi, testi,
+          kapcsolati és jelentésalkotó szinteken egyaránt.
         </p>
         <p>
-          {" "}
-          A folyamatot közösen alakítjuk, a hangsúly azon van, hogy kialakuljon
-          egy belsőbb kapcsolódás, amely hosszabb távon is támpontot jelenthet.
-        </p>
-        <p>
-          Integratív szemléletben dolgozom. Ez azt jelenti, hogy nem egyetlen
-          módszerre építek, hanem több megközelítés szemléletét kapcsolom össze
-          annak érdekében, hogy a folyamat hozzád és az aktuális
-          élethelyzetedhez igazodjon.
+          A különböző megközelítések nem technikák gyűjteményeként jelennek meg,
+          hanem egy közös célt szolgálnak: hogy a belső élmények érthetőbbé,
+          megtarthatóbbá váljanak, és kialakuljon egy stabilabb kapcsolat
+          önmagunkkal. A közös munka mindig a kliens tempójához és aktuális
+          teherbírásához igazodik.
         </p>
 
-        <div className="bg-[#ece8e1] p-8 rounded-2xl text-center">
-          <h3 className="font-semibold mb-3">
-            Nem módszerekkel, hanem szemlélettel dolgozom
-          </h3>
-          <p>
-            A közös munka mindig a kliens tempójához és aktuális teherbírásához
-            igazodik.
-          </p>
-        </div>
+        <p>
+          A közös munka során beszélgetésen alapuló, imaginatív, testorientált,
+          dramatikus és tapasztalati elemekkel is dolgozom, integratív
+          szemléletben. A hangsúly nem a módszereken, hanem azon van, hogy
+          biztonságos térben lehessen ránézni a belső folyamatokra, megérteni az
+          elakadások hátterét, és megtalálni a saját, belsőbb irányt
+        </p>
+        <p>
+          Munkámat rendszeres önreflexió, továbbképzés és szakmai
+          felelősségvállalás kíséri. Fontos számomra, hogy a segítői munka ne
+          technikák alkalmazása legyen, hanem egy folyamatosan átgondolt, etikus
+          és biztonságos kísérés.
+        </p>
       </section>
 
       {/* MÓDSZEREK */}
       <section id="modszer" className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-serif mb-10 text-center">Módszerek</h2>
+        <h2 className="text-2xl font-serif mb-10 text-center">Eszközök és megközelítések</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {methods.map((method, i) => (
             <div
@@ -153,25 +191,7 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
-        {/* <div className="grid md:grid-cols-3 gap-8">
-          {[
-            "Segítő beszélgetés",
-            "Imagináció",
-            "Testorientált figyelem",
-            "Pszichodráma",
-            "Családállítás",
-          ].map((title, i) => (
-            <div
-              key={i}
-              className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition transform hover:scale-[1.02]"
-            >
-              <h3 className="font-semibold mb-3">{title}</h3>
-              <p className="text-sm leading-relaxed">
-                Rövid leírás helye — ezt majd finomítjuk a végleges szöveggel.
-              </p>
-            </div>
-          ))}
-        </div> */}
+       
       </section>
 
       {/* SZAKMAI HÁTTÉR */}
@@ -180,6 +200,8 @@ export default function AboutPage() {
         className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10"
       >
         <div>
+          <h2 className="text-xl font-serif mb-4">Szakmai háttér</h2>
+          <p className="mb-4">Mentálhigiénés segítőként integratív szemléletben dolgozom. Szakmai utam során olyan megközelítések iránt érdeklődtem, amelyek a belső folyamatokat összefüggéseikben vizsgálják, és figyelembe veszik az érzelmi, testi és narratív szinteket is.</p>
           <h2 className="text-xl font-serif mb-4">Szemléleti alapok</h2>
           <ul className="space-y-2">
             <li>• pszichodinamikus gondolkodás</li>
@@ -189,12 +211,13 @@ export default function AboutPage() {
         </div>
 
         <div>
-          <h2 className="text-xl font-serif mb-4">Képzések</h2>
-          <ul className="space-y-2">
-            <li>• Mentálhigiénés segítő</li>
-            <li>• Imaginatív módszerek</li>
-            <li>• Testorientált képzések</li>
+          <h2 className="text-xl font-serif mb-4">Képzések és tanulmányok</h2>
+          <ul className="space-y-2 mb-4">
+            <li>• Mentálhigiénés segítő képzés</li>
+            <li>• Imaginatív módszerekkel végzett segítői munka</li>
+            <li>• Testorientált szemléletű továbbképzések</li>
           </ul>
+          <p>Ez a felsorolás nem a teljességet, hanem a szakmai irányultságot kívánja megmutatni.</p>
         </div>
       </section>
 
@@ -205,12 +228,7 @@ export default function AboutPage() {
           kísérés és megtartás.
         </p>
 
-        <Link
-          to="/contact"
-          className="border px-8 py-3 rounded-full hover:bg-black hover:text-white transition"
-        >
-          Rólam bővebben
-        </Link>
+   
       </section>
     </main>
   );

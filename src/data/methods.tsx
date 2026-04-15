@@ -5,14 +5,14 @@ export const methods = [
       "A találkozások alapja a reflektív beszélgetés. Fontos számomra, hogy a kliens szavai, gondolatai és kérdései komolyan legyenek véve, és ne legyen „jó válasz” vagy elvárt irány. A beszélgetés segít abban, hogy az eddig nehezen megfogható belső élmények érthetőbbé váljanak.",
   },
   {
-    title: "Imagináció",
+    title: "Imaginatív, belső képekkel végzett munka",
     description:
-      "Belső képekkel végzett munka. A folyamat során időnként belső képekkel, szimbolikus megjelenésekkel dolgozunk. Ezek a képek a belső világ természetes nyelvén jelennek meg, és lehetőséget adnak arra, hogy olyan érzésekhez és élményekhez is kapcsolódni lehessen, amelyek szavakkal nehezen kifejezhetők. Az imaginatív munka mindig biztonságos keretben, a kliens aktuális állapotához igazítva történik.",
+      "A folyamat során időnként belső képekkel, szimbolikus megjelenésekkel dolgozunk. Ezek a képek a belső világ természetes nyelvén jelennek meg, és lehetőséget adnak arra, hogy olyan érzésekhez és élményekhez is kapcsolódni lehessen, amelyek szavakkal nehezen kifejezhetők. Az imaginatív munka mindig biztonságos keretben, a kliens aktuális állapotához igazítva történik.",
   },
   {
-    title: "Testorientált figyelem",
+    title: "Integrative Core Dynamics",
     description:
-      "A belső folyamatok gyakran testi szinten is megjelennek. A munka során teret kap annak észrevétele, hogy egy-egy téma hogyan hat a testre, milyen érzetek, feszültségek vagy változások jelennek meg. Ez nem technikai beavatkozás, hanem figyelem és tudatosítás.",
+      "Testorientált figyelem. A belső folyamatok gyakran testi szinten is megjelennek. A munka során teret kap annak észrevétele, hogy egy-egy téma hogyan hat a testre, milyen érzetek, feszültségek vagy változások jelennek meg. Ez nem technikai beavatkozás, hanem figyelem és tudatosítás.",
   },
   {
     title: "Pszichodráma",

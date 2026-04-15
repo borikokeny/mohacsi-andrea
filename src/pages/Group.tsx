@@ -275,12 +275,12 @@ export default function Group() {
               Lásd meg életed mintáit és alakítsd őket tudatosan!
             </h1>
 
-            <div className="h-0.5 bg-white/40 w-32 mb-4" />
+            <div className="h-0.5 bg-white/40 w-100 mb-4" />
 
-            <h2 className="text-white text-lg leading-relaxed">
+            {/* <h2 className="text-white text-lg leading-relaxed">
               A pszichodráma hatékony út az önismerethez, a fejlődéshez és a
               belső harmónia megteremtéséhez.
-            </h2>
+            </h2> */}
           </div>
         </div>
       </div>
@@ -288,11 +288,13 @@ export default function Group() {
       {/* ---------------- LEÍRÁS ---------------- */}
       <section className="space-y-4 mb-10">
         <h1 className="text-4xl font-semibold">Hidak Önmagunkhoz</h1>
-        <h2 className="text-2xl font-semibold">Pszichodráma Csoportok</h2>
+        <h2 className="text-2xl font-semibold">
+          Hétvégi Önismereti Csoportok Budapesten
+        </h2>
 
-        <h3 className="text-lg">
+        {/* <h3 className="text-lg">
           180 órás, 18 alkalmas hétvégi önismereti csoportok Budapesten
-        </h3>
+        </h3> */}
 
         <p>
           Hogyan igazodunk el önmagunkban, kapcsolatainkban, életünkben, a
@@ -301,14 +303,17 @@ export default function Group() {
         </p>
 
         <p>
-          Csoportunk ebben az úton levésben kísér – hogy ne csak elindulj, de
-          meg is érkezz önmagadhoz. A csoport biztonságos, megtartó tér, ahol új
-          mintákat és megoldásokat próbálhatsz ki.
+          Csoportjaink ebben az úton levésben kísérnek – hogy ne csak elindulj,
+          de meg is érkezz önmagadhoz. A csoport biztonságos, megtartó tér, ahol
+          lehetőség nyílik új minták és megoldások kipróbálására.
         </p>
+        <p>A csoport olyan tér, ahol nem vagy egyedül a történeteddel. A kapcsolódás, a tükröződés és a közös jelenlét segít abban, hogy láthatóvá válj – a saját tempódban, biztonságos keretek között.</p>
+        <p>A csoport olyan tér, ahol nem vagy egyedül a történeteddel. A kapcsolódás, a tükröződés és a közös jelenlét segít abban, hogy láthatóvá válj – a saját tempódban, biztonságos keretek között.</p>
+        <p>A folyamatot biztonságos, elfogadó keretek között tartom, ahol minden érzésnek, állapotnak és tapasztalatnak helye van.</p>
 
-        <p>
+        {/* <p>
           <strong>Időbeosztás: </strong> 9:00–18:00
-        </p>
+        </p> */}
         <p>
           <strong>Helyszín: </strong> Budapest (jól megközelíthető helyen)
         </p>
@@ -343,15 +348,15 @@ export default function Group() {
           <li className="flex gap-3">
             <span className="text-heromenta font-bold">3.</span>
             <p>
-              A találkozások 3 hetente zajlanak, fokozatosan mélyülő önismereti
-              folyamattal.
+              A találkozások csoporttól függően 2-4 hetente zajlanak,
+              fokozatosan mélyülő önismereti folyamattal.
             </p>
           </li>
 
           <li className="flex gap-3">
             <span className="text-heromenta font-bold">4.</span>
             <p>
-              A 18. alkalmon lezárjuk a folyamatot és összefoglaljuk az együtt
+              Az utolsó alkalmon lezárjuk a folyamatot és összefoglaljuk az együtt
               végzett munkát.
             </p>
           </li>
@@ -401,41 +406,42 @@ export default function Group() {
           </li>
         </ul>
       </section>
-<section className="max-w-6xl mx-auto px-4 py-16">
-  <h2 className="text-4xl font-aboreto mb-12">Rólam mondták</h2>
+      <section className="max-w-6xl mx-auto px-4 py-16">
+        <h2 className="text-4xl font-aboreto mb-12">Rólam mondták</h2>
 
-  <div className="grid md:grid-cols-3 gap-12 text-herodarkseablue">
-    {/* 1. vélemény */}
-    <div>
-      <p className="text-lg leading-relaxed">
-        "Andrea jelenléte biztonságot ad, vele könnyű megnyílni. 
-        A közös munkánk során olyan felismerésekhez jutottam, 
-        amelyek alapjaiban változtatták meg az életemhez való hozzáállásom."
-      </p>
-      <p className="mt-6 font-semibold">Katalin M.</p>
-    </div>
+        <div className="grid md:grid-cols-3 gap-12 text-herodarkseablue">
+          {/* 1. vélemény */}
+          <div>
+            <p className="text-lg leading-relaxed">
+              "Andrea jelenléte biztonságot ad, vele könnyű megnyílni. A közös
+              munkánk során olyan felismerésekhez jutottam, amelyek alapjaiban
+              változtatták meg az életemhez való hozzáállásom."
+            </p>
+            <p className="mt-6 font-semibold">Katalin M.</p>
+          </div>
 
-    {/* 2. vélemény */}
-    <div>
-      <p className="text-lg leading-relaxed">
-        "A csoport légköre Andrea mellett támogató és megtartó. 
-        Mindig figyelmes, pontosan kérdez, és segít meglátni az összefüggéseket, 
-        amiket egyedül nem vettem volna észre."
-      </p>
-      <p className="mt-6 font-semibold">Dávid P.</p>
-    </div>
+          {/* 2. vélemény */}
+          <div>
+            <p className="text-lg leading-relaxed">
+              "A csoport légköre Andrea mellett támogató és megtartó. Mindig
+              figyelmes, pontosan kérdez, és segít meglátni az összefüggéseket,
+              amiket egyedül nem vettem volna észre."
+            </p>
+            <p className="mt-6 font-semibold">Dávid P.</p>
+          </div>
 
-    {/* 3. vélemény */}
-    <div>
-      <p className="text-lg leading-relaxed">
-        "A pszichodráma alkalmakon Andrea finoman, mégis határozottan vezetett. 
-        Felszabadító élmény volt olyan helyzeteket megélni és átírni, 
-        amelyek régóta bennem voltak. Hálás vagyok az egész folyamatért."
-      </p>
-      <p className="mt-6 font-semibold">Eszter L.</p>
-    </div>
-  </div>
-</section>
+          {/* 3. vélemény */}
+          <div>
+            <p className="text-lg leading-relaxed">
+              "A pszichodráma alkalmakon Andrea finoman, mégis határozottan
+              vezetett. Felszabadító élmény volt olyan helyzeteket megélni és
+              átírni, amelyek régóta bennem voltak. Hálás vagyok az egész
+              folyamatért."
+            </p>
+            <p className="mt-6 font-semibold">Eszter L.</p>
+          </div>
+        </div>
+      </section>
 
       {/* ---------------- KÁRTYÁK RÉSZ ---------------- */}
       <section className="space-y-10">

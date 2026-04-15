@@ -37,12 +37,12 @@ export default function Hero() {
           Egyéni és csoportos folyamatok azoknak, akik szeretnének jobban kapcsolódni önmagukhoz, tisztábban érezni, mire van szükségük és megtanulni képviselni magukat kapcsolataikban.
         </p>
 
-        <Link
+        {/* <Link
           to="/contact"
           className="inline-block mt-6 bg-white text-gray-800 px-6 py-3 rounded-full text-sm hover:bg-gray-200 transition"
         >
           Időpontfoglalás
-        </Link>
+        </Link> */}
       </div>
     </section>
   );
