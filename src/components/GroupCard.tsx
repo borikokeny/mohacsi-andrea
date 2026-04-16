@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
+import Pafrany from "../images/Pafrany.jpg";
 
 type Status = "open" | "soon" | "full";
 
 export type GroupCardProps = {
+  image: string;
   title: string;
   description: string;
   date: string;
@@ -14,6 +16,7 @@ export type GroupCardProps = {
 };
 
 export default function GroupCard({
+  image,
   title,
   description,
   date,
@@ -21,7 +24,6 @@ export default function GroupCard({
   price,
   status,
   slug,
-  email,
 }: GroupCardProps) {
   const navigate = useNavigate();
 
@@ -57,8 +59,11 @@ export default function GroupCard({
       // onClick={() => navigate(`/group/${slug}`)}
       className="cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col gap-4"
     >
+      <img src={image} alt={title} className="w-full h-60  object-cover " />
       {/* Status */}
       <div className="flex justify-between items-start">
+        
+        {/* <img src={Pafrany} alt={title} className="w-full h-full object-cover " /> */}
         <h3 className="text-xl font-semibold">{title}</h3>
         <span
           className={`text-sm px-3 py-1 rounded-full ${currentStatus.color}`}

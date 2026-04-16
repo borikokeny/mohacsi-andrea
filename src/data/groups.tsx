@@ -1,7 +1,10 @@
 import type { GroupCardProps } from "../components/GroupCard";
+import Pafrany from "../images/Pafrany.jpg";
+import Hullam from "../images/Hullam.jpg";
 
 export const groups: GroupCardProps[] = [
   {
+    image: Pafrany,
     title: "Hidak Önmagunkhoz - 150 órás önismereti pszihodráma csoport",
     description: "Biztonságban kapcsolódni úgy, hogy lehetek önmagam",
     date: "2026. április",
@@ -12,6 +15,7 @@ export const groups: GroupCardProps[] = [
     email: "hidak.onismeret@gmail.com",
   },
   {
+    image: Hullam,
     title: "Nem vagyok elkésve - önismereti csoport fiatal felnőtteknek",
     description:
       "Van egy hely, ahol nem kell erősnek lenned és egy út, ami elvezet ahhoz, aki valójában vagy.",
