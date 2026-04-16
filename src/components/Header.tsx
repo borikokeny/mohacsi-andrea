@@ -5,7 +5,7 @@ import Logo_orig from "../images/Logo.png";
 
 export default function Header() {
   return (
-    <header className="w-full bg-white shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
         {/* LEFT: Logo + Text */}
         <div className="flex items-center gap-6">
@@ -98,7 +98,7 @@ export default function Header() {
                 Csoportos
               </NavLink>
             </li>
-                        <li>
+            <li>
               <NavLink
                 to="/latest"
                 className={({ isActive }) =>
