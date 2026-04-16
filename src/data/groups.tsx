@@ -9,6 +9,7 @@ export const groups: GroupCardProps[] = [
     price: "33 000 Ft/alkalom (3300 Ft / óra)",
     status: "open",
     slug: "önismereti-pszihodráma",
+    email: "hidak.onismeret@gmail.com",
   },
   {
     title: "Nem vagyok elkésve - önismereti csoport fiatal felnőtteknek",
@@ -19,5 +20,6 @@ export const groups: GroupCardProps[] = [
     price: "20 000 Ft / alkalom (6 alkalom)",
     status: "soon",
     slug: "fiatal-felnott-csoport",
+    email: "hidak.onismeret@gmail.com",
   },
 ];

@@ -10,6 +10,7 @@ export type GroupCardProps = {
   price: string;
   status: Status;
   slug: string;
+  email: string;
 };
 
 export default function GroupCard({
@@ -20,6 +21,7 @@ export default function GroupCard({
   price,
   status,
   slug,
+  email,
 }: GroupCardProps) {
   const navigate = useNavigate();
 
