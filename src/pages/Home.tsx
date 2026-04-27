@@ -363,30 +363,7 @@ export default function HomePage() {
       </section> */}
 
       {/* ABOUT */}
-      <section className="bg-white py-24 px-6">
-  <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 items-center">
 
-    <div className="max-w-md">
-      <h2 className="text-3xl font-serif mb-6">
-        Bemutatkozás
-      </h2>
-
-      <p className="mb-6 leading-relaxed text-[#555]">
-        Mohácsi Andrea vagyok, integrál szemléletű mentálhigiénés szakember...
-      </p>
-
-      <a href="/about" className="text-[#2f6f6b] underline">
-        Rólam bővebben →
-      </a>
-    </div>
-
-    <img
-      src={Portre}
-      alt="portrait"
-      className="rounded-2xl shadow-md"
-    />
-  </div>
-</section>
       {/* <section className="bg-white py-14 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div>
@@ -446,8 +423,70 @@ export default function HomePage() {
     </div>
   </div>
 </section>
+      <section className="bg-white py-24 px-6">
+  <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 items-center">
 
+    <div className="max-w-md">
+      <h2 className="text-3xl font-serif mb-6">
+        Bemutatkozás
+      </h2>
 
+      <p className="mb-6 leading-relaxed text-[#555]">
+        Mohácsi Andrea vagyok, integrál szemléletű mentálhigiénés
+              szakember, Metamorphoses meseterapeuta, pszichodráma vezető,
+              Integrative Core Dynamics testorientált szakember,
+              gyászcsoportvezető, családállító, integrál önismereti tanácsadó és
+              még sokfelé jártam az úton, míg most ott vagyok, ahol találkozunk.
+      </p>
+
+      <a href="/about" className="text-[#2f6f6b] underline">
+        Rólam bővebben →
+      </a>
+    </div>
+
+    <img
+      src={Portre}
+      alt="portrait"
+      className="rounded-2xl shadow-md"
+    />
+  </div>
+</section>
+<section className="max-w-6xl mx-auto px-4 py-16">
+        <h2 className="text-4xl font-aboreto mb-12">Rólam mondták</h2>
+
+        <div className="grid md:grid-cols-3 gap-12 text-herodarkseablue">
+          {/* 1. vélemény */}
+          <div>
+            <p className="text-lg leading-relaxed">
+              "Andrea jelenléte biztonságot ad, vele könnyű megnyílni. A közös
+              munkánk során olyan felismerésekhez jutottam, amelyek alapjaiban
+              változtatták meg az életemhez való hozzáállásom."
+            </p>
+            <p className="mt-6 font-semibold">Katalin M.</p>
+          </div>
+
+          {/* 2. vélemény */}
+          <div>
+            <p className="text-lg leading-relaxed">
+              "A csoport légköre Andrea mellett támogató és megtartó. Mindig
+              figyelmes, pontosan kérdez, és segít meglátni az összefüggéseket,
+              amiket egyedül nem vettem volna észre."
+            </p>
+            <p className="mt-6 font-semibold">Dávid P.</p>
+          </div>
+
+          {/* 3. vélemény */}
+          <div>
+            <p className="text-lg leading-relaxed">
+              "A pszichodráma alkalmakon Andrea finoman, mégis határozottan
+              vezetett. Felszabadító élmény volt olyan helyzeteket megélni és
+              átírni, amelyek régóta bennem voltak. Hálás vagyok az egész
+              folyamatért."
+            </p>
+            <p className="mt-6 font-semibold">Eszter L.</p>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="text-center py-24 px-6 bg-[#5f9f9a] text-white/90">

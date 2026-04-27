@@ -205,11 +205,11 @@ export default function Group() {
         </ul>
         
       </section>
-      <section className="max-w-6xl mx-auto px-4 py-16">
+      {/* <section className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-aboreto mb-12">Rólam mondták</h2>
 
         <div className="grid md:grid-cols-3 gap-12 text-herodarkseablue">
-          {/* 1. vélemény */}
+         
           <div>
             <p className="text-lg leading-relaxed">
               "Andrea jelenléte biztonságot ad, vele könnyű megnyílni. A közös
@@ -219,7 +219,6 @@ export default function Group() {
             <p className="mt-6 font-semibold">Katalin M.</p>
           </div>
 
-          {/* 2. vélemény */}
           <div>
             <p className="text-lg leading-relaxed">
               "A csoport légköre Andrea mellett támogató és megtartó. Mindig
@@ -229,7 +228,6 @@ export default function Group() {
             <p className="mt-6 font-semibold">Dávid P.</p>
           </div>
 
-          {/* 3. vélemény */}
           <div>
             <p className="text-lg leading-relaxed">
               "A pszichodráma alkalmakon Andrea finoman, mégis határozottan
@@ -240,7 +238,7 @@ export default function Group() {
             <p className="mt-6 font-semibold">Eszter L.</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ---------------- KÁRTYÁK RÉSZ ---------------- */}
       <section className="space-y-10">
