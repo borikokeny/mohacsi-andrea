@@ -69,7 +69,7 @@ export default function MintChecklist({
         <li key={i} className="flex items-start gap-4">
           {/* ikon körben */}
           <span
-            className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-heromenta bg-heromenta/20 mt-1"
+            className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-heromenta bg-heromenta/40 mt-1"
             aria-hidden="true"
             title={useStar ? "csillag" : "ellenőrzés"}
           >
