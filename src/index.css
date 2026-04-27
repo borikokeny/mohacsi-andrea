@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 /* ---------- GLOBAL TEXT STYLES ---------- */
-p, button, span, input, label, li {
+/* p, button, span, input, label, li {
   @apply font-quicksand;
+} */
+
+p, button, span, input, label, li {
+  @apply font-serif;
 }

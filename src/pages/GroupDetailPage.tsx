@@ -81,9 +81,11 @@ export default function GroupDetailPage() {
       <section>
         <h2 className="text-xl font-semibold mb-2">Csoportvezetők</h2>
         <p className="text-gray-600">
-          <strong>Mohácsi Andrea -</strong> pszihodráma vezető, integrál szemléletű mentálhigiénés szakember, Metamorphoses meseterepauta, Integrative Core Dynamics testorientált szakember
+          <strong>Mohácsi Andrea -</strong> pszihodráma vezető, integrál
+          szemléletű mentálhigiénés szakember, Metamorphoses meseterepauta,
+          Integrative Core Dynamics testorientált szakember
         </p>
-         <p className="text-gray-600">
+        <p className="text-gray-600">
           <strong>Méth Anna -</strong> pszihodráma asszisztens, jógaoktató
         </p>
       </section>
@@ -94,13 +96,7 @@ export default function GroupDetailPage() {
         <p>Jelentkezés, érdeklődés az alábbi űrlap kitöltésével</p>
         <ul>
           <li>
-            Email:{" "}
-            <a
-              href="mailto:hidak.onismeret@gmail.com"
-              className="text-blue-600 underline hover:text-blue-800"
-            >
-              hidak.onismeret@gmail.com
-            </a>
+            <p>Email: hidak.onismeret@gmail.com</p>
           </li>
           <li>
             Facebook oldalunk:{" "}
@@ -108,7 +104,7 @@ export default function GroupDetailPage() {
               href="https://www.facebook.com/profile.php?id=61587835397317"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 underline hover:text-blue-800"
+              className="text-blue-600 hover:text-blue-800"
             >
               Hidak Önmagunkhoz
             </a>

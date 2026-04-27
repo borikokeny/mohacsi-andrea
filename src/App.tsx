@@ -8,9 +8,9 @@ import Latest from "./pages/Latest.js";
 import Contact from "./pages/Contact.js";
 // import GroupDetails from "./pages/GroupDetails.js";
 import GroupDetailPage from "./pages/GroupDetailPage.js";
-import Terkepeink from "./pages/Terkepeink.js";
-import BelsoTajakon from "./pages/BelsoTajakon.js";
-import MesejaroTerkep from "./pages/MesejaroTerkep.js";
+// import Terkepeink from "./pages/Terkepeink.js";
+// import BelsoTajakon from "./pages/BelsoTajakon.js";
+// import MesejaroTerkep from "./pages/MesejaroTerkep.js";
 import "./App.css";
 
 const router = createBrowserRouter([
@@ -25,9 +25,9 @@ const router = createBrowserRouter([
       { path: "/latest", element: <Latest /> },
       { path: "/contact", element: <Contact /> },
       // { path: "/group/:slug", element: <GroupDetails /> }
-      { path: "/terkepeink", element: <Terkepeink /> },
-      { path: "/belso-tajakon", element: <BelsoTajakon /> },
-      { path: "/mesejaro-terkep", element: <MesejaroTerkep /> },
+      // { path: "/terkepeink", element: <Terkepeink /> },
+      // { path: "/belso-tajakon", element: <BelsoTajakon /> },
+      // { path: "/mesejaro-terkep", element: <MesejaroTerkep /> },
       { path: "*", element: <div>Not found</div> },
     ],
   },

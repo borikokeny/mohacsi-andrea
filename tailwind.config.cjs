@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         aboreto: ["Aboreto", "system-ui"],
-        quicksand: ["Quicksand", "sans-serif"],
+        // quicksand: ["Quicksand", "sans-serif"],
+        serif: ['"Playfair Display"', 'serif'],
       },
         colors: {
         heromenta: "#CFF4EC",
