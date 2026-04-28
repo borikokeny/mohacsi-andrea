@@ -46,7 +46,7 @@ export default function GroupDetailPage() {
       <section className="bg-[#f4f6f5] py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl font-serif text-[#2f6f6b] mb-8">
-            Mit adhat Neked ez a 150 óra?
+            Mit adhat Neked ez a folyamat?
           </h2>
 
           <ul className="space-y-3 text-[#444]">

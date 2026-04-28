@@ -15,3 +15,18 @@ h1, h2, h3, h4, h5, h6, a {
 p, button, span, input, label, li {
   @apply font-serif;
 }
+
+@layer components {
+  .chip {
+    @apply px-4 py-2 text-sm 
+           bg-white
+           border border-[#dcdcdc] 
+           rounded-full 
+           transition-colors duration-200
+           hover:bg-[#4f8f8a] hover:text-white hover:border-[#4f8f8a];
+  }
+  .chip:hover {
+  background-color: #4f8f8a !important;
+  color: white;
+}
+}
