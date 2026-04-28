@@ -33,7 +33,7 @@ export default function GroupCard({
   > = {
     open: {
       label: "Jelentkezhető",
-      color: "bg-green-100 text-green-700",
+      color: "bg-[#e6efee] text-[#2f6f6b]",
       button: "Bővebben",
     },
     soon: {
@@ -52,91 +52,70 @@ export default function GroupCard({
 
   return (
     <div
-    onClick={() => {
-  console.log("CLICK", slug);
-  navigate(`/group/${slug}`);
-}}
-      // onClick={() => navigate(`/group/${slug}`)}
-      className="cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col gap-4"
-    >
-      <img src={image} alt={title} className="w-full h-60  object-cover " />
-      {/* Status */}
-      <div className="flex justify-between items-start">
-        
-        {/* <img src={Pafrany} alt={title} className="w-full h-full object-cover " /> */}
-        <h3 className="text-xl font-semibold">{title}</h3>
-        <span
-          className={`text-sm px-3 py-1 rounded-full ${currentStatus.color}`}
-        >
-          {currentStatus.label}
-        </span>
-      </div>
+  onClick={() => navigate(`/group/${slug}`)}
+  className="cursor-pointer bg-white rounded-lg border border-[#e5e5e5] hover:border-[#4f8f8a]/40 transition overflow-hidden"
+>
+  {/* IMAGE */}
+  <img
+    src={image}
+    alt={title}
+    className="w-full h-56 object-cover"
+  />
 
-      {/* Description */}
-      <p className="text-gray-600">{description}</p>
+  {/* CONTENT */}
+  <div className="p-6 space-y-4">
 
-      {/* Info */}
-      <div className="text-sm text-gray-500 space-y-1">
-        <p>📅 {date}</p>
-        <p>📍 {location}</p>
-        <p>💰 {price}</p>
-      </div>
+    {/* TITLE + STATUS */}
+    <div className="flex justify-between items-start gap-4">
+      <h3 className="text-lg font-medium text-[#2f2f2f]">
+        {title}
+      </h3>
 
-      {/* CTA */}
+      <span className={`text-xs px-3 py-1 rounded-full ${currentStatus.color}`}>
+  {currentStatus.label}
+</span>
+    </div>
+
+    {/* DESCRIPTION */}
+    <p className="text-[#555] text-sm leading-relaxed">
+      {description}
+    </p>
+
+    {/* INFO */}
+    <div className="text-sm text-[#666] space-y-1">
+      <p>📅 {date}</p>
+      <p>📍 {location}</p>
+      <p>💰 {price}</p>
+    </div>
+
+    {/* CTA */}
+    <div className="pt-2">
       <button
         onClick={(e) => {
           e.stopPropagation();
-            console.log("CLICK", slug);
           navigate(`/group/${slug}`);
         }}
-        className="mt-2 bg-black text-white py-2 rounded-xl hover:bg-gray-800 transition"
+        className="text-[#2f6f6b] underline text-sm"
       >
-        {currentStatus.button}
+        {currentStatus.button} →
       </button>
     </div>
-  );
-}
 
-// import { useNavigate } from "react-router-dom";
-
-// export default function GroupCard({
-//   title,
-//   description,
-//   date,
-//   location,
-//   price,
-//   status,
-//   slug,
-// }: GroupCard) {
-//   const navigate = useNavigate();
-
-//   const statusConfig = {
-//     open: {
-//       label: "Jelentkezhető",
-//       color: "bg-green-100 text-green-700",
-//       button: "Jelentkezem",
-//     },
-//     soon: {
-//       label: "Hamarosan indul",
-//       color: "bg-yellow-100 text-yellow-700",
-//       button: "Érdekel",
-//     },
-//     full: {
-//       label: "Betelt",
-//       color: "bg-red-100 text-red-700",
-//       button: "Értesítést kérek",
-//     },
-//   };
-
-//   const currentStatus = statusConfig[status];
-
-//   return (
+  </div>
+</div>
 //     <div
-//       onClick={() => navigate(`/csoportok/${slug}`)}
+//     onClick={() => {
+//   console.log("CLICK", slug);
+//   navigate(`/group/${slug}`);
+// }}
+//       // onClick={() => navigate(`/group/${slug}`)}
 //       className="cursor-pointer bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col gap-4"
 //     >
+//       <img src={image} alt={title} className="w-full h-60  object-cover " />
 //       {/* Status */}
 //       <div className="flex justify-between items-start">
+        
+//         {/* <img src={Pafrany} alt={title} className="w-full h-full object-cover " /> */}
 //         <h3 className="text-xl font-semibold">{title}</h3>
 //         <span
 //           className={`text-sm px-3 py-1 rounded-full ${currentStatus.color}`}
@@ -159,12 +138,14 @@ export default function GroupCard({
 //       <button
 //         onClick={(e) => {
 //           e.stopPropagation();
-//           navigate(`/csoportok/${slug}`);
+//             console.log("CLICK", slug);
+//           navigate(`/group/${slug}`);
 //         }}
 //         className="mt-2 bg-black text-white py-2 rounded-xl hover:bg-gray-800 transition"
 //       >
 //         {currentStatus.button}
 //       </button>
 //     </div>
-//   );
-// }
+  );
+}
+

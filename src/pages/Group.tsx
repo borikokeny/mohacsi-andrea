@@ -23,7 +23,7 @@ export default function Group() {
         />
 
         {/* teal overlay */}
-        <div className="absolute inset-0 bg-[#2f6f6b]/60"></div>
+        <div className="absolute inset-0 bg-[#2f6f6b]/40"></div>
 
         {/* content */}
         <div className="relative z-10 h-full flex items-center">

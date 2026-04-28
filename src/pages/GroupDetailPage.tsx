@@ -2,19 +2,6 @@ import { useParams } from "react-router-dom";
 import type { GroupCardProps } from "../components/GroupCard";
 import { groups } from "../data/groups";
 
-// const groups: GroupCardProps[] = [
-//   {
-//     title: "Önismereti csoport nőknek",
-//     description:
-//       "Egy támogató közeg, ahol mélyebb kapcsolatba kerülhetsz önmagaddal.",
-//     date: "Kedd 18:00 – indul: Okt. 10.",
-//     location: "Online (Zoom)",
-//     price: "45 000 Ft / 8 alkalom",
-//     status: "open",
-//     slug: "onismereti-noknek",
-//   },
-// ];
-
 export default function GroupDetailPage() {
   const { slug } = useParams();
   console.log("PARAM SLUG:", slug);
