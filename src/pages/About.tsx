@@ -1,4 +1,3 @@
-
 import Terepauta from "../images/terepauta.jpg";
 import { methods } from "../data/methods";
 
@@ -6,8 +5,11 @@ import { methods } from "../data/methods";
 
 export default function AboutPage() {
   // smooth scroll offset (fix header miatt)
-  const scrollToId = (id) => {
+  const scrollToId = (id: string) => {
     const el = document.getElementById(id);
+
+    if (!el) return;
+
     const yOffset = -80;
     const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
@@ -22,20 +24,22 @@ export default function AboutPage() {
           <h1 className="text-3xl md:text-4xl font-serif mb-4">
             Mohácsi Andrea
           </h1>
-           <p>pszichodráma vezető, integrál szemléletű mentálhigiénés szakember, Metamorphoses meseterepauta, Integrative Core Dynamics testorientált szakember</p>
+          <p>
+            pszichodráma vezető, integrál szemléletű mentálhigiénés szakember,
+            Metamorphoses meseterepauta, Integrative Core Dynamics testorientált
+            szakember
+          </p>
           <p className="text-xl leading-relaxed mt-9 mb-6">
             Integratív szemléletű mentálhigiénés szakemberként olyan teret
             kínálok, ahol biztonságban megállhatsz, és ránézhetsz arra, ami
             belül történik.
           </p>
-        
         </div>
         <img
           src={Terepauta}
           alt="Mohácsi Andrea"
           className="w-full max-w-md h-[400px] rounded-lg shadow-md object-cover ms-12"
         />
-        
       </section>
       <div>
         {/* ANCHOR NAV */}
