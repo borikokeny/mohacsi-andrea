@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Portre from "../images/Portre.jpg";
+import Portre_home from "../images/Portre_home.jpg";
 import Plant from "../images/Plant.jpg";
 import Stuavegg from "../images/Stuavegg.jpg";
 
@@ -135,7 +136,7 @@ export default function HomePage() {
     </div>
 
     <img
-      src={Portre}
+      src={Portre_home}
       alt="portrait"
       className="rounded-2xl shadow-md"
     />
