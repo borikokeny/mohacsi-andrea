@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import MintChecklist from "../components/MintChecklist";
-import GroupImage from "../images/Group.jpg";
+import GroupImage from "../images/Group_hero.jpeg";
 import FAQGroup from "../components/FAQGroup";
 
 export default function Group() {

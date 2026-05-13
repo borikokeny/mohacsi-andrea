@@ -1,6 +1,6 @@
 import type { GroupCardProps } from "../components/GroupCard";
 import Group_4 from "../images/Group_4.jpg";
-import Group from "../images/Group.jpg";
+import Group from "../images/Group_hero.jpeg";
 
 export const groups: GroupCardProps[] = [
   {

@@ -3,14 +3,14 @@ export default function Contact() {
     <div className="max-w-5xl mx-auto px-6 py-12 font-quicksand">
 
       {/* ----------- OLDAL CÍM ----------- */}
-      <h1 className="text-4xl font-aboreto text-center mb-10">
+      <h1 className="text-4xl font-aboreto text-center text-[#48969f] mb-10">
         Kapcsolat & Hírlevél
       </h1>
 
       {/* ----------- HÍRLEVÉL FELIRATKOZÁS ----------- */}
       <section className="bg-white border border-heromenta/60 rounded-lg p-8 shadow-sm">
 
-        <h2 className="text-2xl font-aboreto text-center mb-4">
+        <h2 className="text-2xl font-aboreto text-center text-[#48969f] mb-4">
           Iratkozz fel hírlevelünkre
         </h2>
 
@@ -45,7 +45,7 @@ export default function Contact() {
 
       {/* ----------- ELÉRHETŐSÉGEK ----------- */}
       <section className="mt-12 text-center">
-        <h2 className="text-2xl font-aboreto mb-4">Elérhetőségek</h2>
+        <h2 className="text-2xl font-aboreto text-[#48969f] mb-4">Elérhetőségek</h2>
 
         <p className="mb-2">
           <strong>Email: </strong> terkeponmagamhoz@gmail.com
