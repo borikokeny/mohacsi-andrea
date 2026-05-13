@@ -4,6 +4,11 @@ import Portre_cut from "../images/Portre_about_cut.jpg";
 import Line_logo from "../images/Line_logo.png";
 import Botanika from "../images/Botanika.png";
 import Mandala_teal from "../images/Mandala_teal.png";
+// import Solo from "../images/Solo.png";
+// import Group from "../images/Group.png";
+// import Spiral from "../images/Spiral.png";
+// import Integ from "../images/Integ.png";
+// import Book from "../images/Book.png";
 import { methods } from "../data/methods";
 
 // AboutPage.jsx
@@ -229,7 +234,7 @@ export default function AboutPage() {
       {/* text */}
       <div className="max-w-3xl ms-6">
 
-        <h2 className="text-xl md:text-2xl font-serif text-[#24484c] leading-tight mb-8">
+        <h2 className="text-xl md:text-2xl font-serif text-[#48969f] leading-tight mb-8">
           Van, amikor nem megoldásra van szükségünk,
           hanem egy olyan térre, ahol biztonságban
           megállhatunk egy pillanatra.
@@ -353,11 +358,11 @@ export default function AboutPage() {
   className="relative overflow-hidden bg-[#f4f9f9] py-24"
 >
   {/* mandala */}
-  <div className="absolute left-[-180px] top-10 opacity-[0.3] hidden lg:block">
+  <div className="absolute left-[-220px] top-[-90px] opacity-[0.3] hidden lg:block">
     <img
       src={Mandala_teal}
       alt=""
-      className="w-[520px] scale-x-[-1]"
+      className="w-[620px] scale-x-[-1]"
     />
   </div>
 
@@ -608,7 +613,7 @@ export default function AboutPage() {
               <img
                 src={method.icon}
                 alt={method.title}
-                className="w-9 h-9 object-contain opacity-95"
+                className="w-15 h-15 object-contain opacity-95"
               />
 
             </div>
@@ -635,7 +640,7 @@ export default function AboutPage() {
     </div>
   </div>
 </section>
-      <section id="modszer" className="max-w-6xl mx-auto px-6 py-16">
+      {/* <section id="modszer" className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-serif mb-10 text-center">
           Eszközök és megközelítések
         </h2>
@@ -650,7 +655,7 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* SZAKMAI HÁTTÉR */}
       <section id="hatter" className="bg-[#f4f6f5] py-20">
