@@ -1,15 +1,72 @@
 import { Link } from "react-router-dom";
 import Portre from "../images/Portre.jpg";
 import Portre_home from "../images/Portre_home.jpg";
+import Home_hero from "../images/Home_hero_optimized_200.jpg";
 import Plant from "../images/Plant.jpg";
 import Stuavegg from "../images/Stuavegg.jpg";
 
 export default function HomePage() {
   return (
     <main className="bg-[#F4F1EC] text-[#2F2F2F]">
-      {/* HERO */}
-      <section className="min-h-[35vh] md:h-[40vh] grid md:grid-cols-[2fr_1fr] items-center bg-gradient-to-br from-[#7fb7b2] via-[#5f9f9a] to-[#3f7f7b]">
-        {/* BAL OLDAL – SZÖVEG */}
+<section className="relative overflow-hidden">
+  {/* Background image */}
+  <div className="absolute inset-0">
+    <img
+      src={Home_hero}
+      alt="Mohácsi Andrea"
+      className="h-full w-full object-cover object-top"
+    />
+
+    {/* Dark overlay */}
+    <div className="absolute inset-0 bg-black/25" />
+
+    {/* Soft gradient overlay */}
+    <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
+  </div>
+
+  {/* Content */}
+  <div className="relative mx-auto flex min-h-[620px] max-w-[1440px] items-center px-6 py-24 md:px-12 lg:px-20">
+    <div className="max-w-2xl text-white text-left">
+     
+
+      {/* Heading */}
+      <h1 className="mb-8 font-serif text-5xl leading-tight md:text-6xl">
+        Biztonságos tér
+        <br />
+        a valódi változáshoz
+      </h1>
+{/* Decorative line */}
+      <div className="mb-8 h-[2px] w-24 bg-[#72b7b1]" />
+      {/* Text */}
+      <p className="mb-12 max-w-xl text-lg leading-9 text-white/90 md:text-xl">
+        Egyéni és csoportos folyamatok azoknak,
+        akik szeretnének jobban kapcsolódni
+        önmagukhoz, tisztábban érezni,
+        mire van szükségük és megtanulni
+        képviselni magukat kapcsolataikban.
+      </p>
+
+      {/* Buttons */}
+      <div className="flex flex-col gap-4 sm:flex-row">
+        <a
+          href="/egyeni"
+          className="rounded-full bg-[#5FA9A1] px-8 py-4 text-center text-sm tracking-wide text-white transition hover:bg-[#4c9189]"
+        >
+          EGYÉNI FOLYAMATOK
+        </a>
+
+        <a
+          href="/csoportos"
+          className="rounded-full border border-white/70 px-8 py-4 text-center text-sm tracking-wide text-white transition hover:bg-white hover:text-[#2c2c2c]"
+        >
+          CSOPORTOS LEHETŐSÉGEK
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+      {/* <section className="min-h-[35vh] md:h-[40vh] grid md:grid-cols-[2fr_1fr] items-center bg-gradient-to-br from-[#7fb7b2] via-[#5f9f9a] to-[#3f7f7b]">
+    
         <div className="px-6 md:px-12 lg:px-20 py-10 md:py-12 text-left">
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium leading-tight text-gray-900 max-w-xl">
             Biztonságos tér a valódi változáshoz
@@ -37,15 +94,15 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* JOBB OLDAL – KÉP */}
+        
         <div className="h-[300px] md:h-full">
           <img
-            src={Plant}
+            src={Portre_home}
             alt="hero"
             className="w-full h-full object-cover object-center"
           />
         </div>
-      </section>
+      </section> */}
 
       {/* SUPPORT */}
       <section className="bg-[#f4f6f5] py-20 px-6">
