@@ -4,11 +4,6 @@ import Portre_cut from "../images/Portre_about_cut.jpg";
 import Line_logo from "../images/Line_logo.png";
 import Botanika from "../images/Botanika.png";
 import Mandala_teal from "../images/Mandala_teal.png";
-// import Solo from "../images/Solo.png";
-// import Group from "../images/Group.png";
-// import Spiral from "../images/Spiral.png";
-// import Integ from "../images/Integ.png";
-// import Book from "../images/Book.png";
 import { methods } from "../data/methods";
 
 // AboutPage.jsx
@@ -464,14 +459,22 @@ export default function AboutPage() {
       </section> */}
 
       {/* HOGYAN DOLGOZOM */}
+      <div className="h-40 pt-8 bg-[#6fa7aa]">
+        <div className="inline-block border border-[#ddd8d1] bg-white/60 px-10 py-8">
+
+        <h2 className="text-[11px] md:text-sm uppercase tracking-[0.28em] text-[#4a4a46] leading-relaxed">
+          Nem módszerekkel, hanem szemlélettel dolgozom
+        </h2>
+
+      </div>
+        {/* <h2 className="pt-6">Nem módszerekkel, hanem szemlélettel dolgozom</h2> */}
+      </div>
       <section
   id="hogyan"
-  className="relative bg-[#f8f6f2] py-28 overflow-hidden"
+  className="relative bg-[#f8f6f2] py-12  overflow-hidden"
 >
   <div className="max-w-6xl mx-auto px-6">
-
-    {/* statement */}
-    <div className="max-w-4xl mx-auto text-center mb-14">
+    {/* <div className="max-w-4xl mx-auto text-center mb-14">
 
       <div className="inline-block border border-[#ddd8d1] bg-white/60 px-10 py-8">
 
@@ -480,12 +483,11 @@ export default function AboutPage() {
         </h2>
 
       </div>
-    </div>
-
+    </div> */}
     {/* intro */}
     <div className="max-w-3xl mx-auto mb-10">
 
-      <p className="text-2xl leading-[1.9] text-[#3c4343] font-serif">
+      <p className="text-2xl leading-[1.9] text-[#46929a] font-serif">
         Munkámban nem egyetlen módszer áll a középpontban,
         hanem az ember.
       </p>
@@ -630,9 +632,9 @@ export default function AboutPage() {
           </p>
 
           {/* button */}
-          <button className="px-6 py-2 rounded-full border border-[#7baeb0] text-[#34656a] text-sm bg-white/60 backdrop-blur-sm transition-all duration-300 hover:bg-[#5f9698] hover:text-white hover:border-[#5f9698]">
+          {/* <button className="px-6 py-2 rounded-full border border-[#7baeb0] text-[#34656a] text-sm bg-white/60 backdrop-blur-sm transition-all duration-300 hover:bg-[#5f9698] hover:text-white hover:border-[#5f9698]">
             Bővebben
-          </button>
+          </button> */}
 
         </div>
       ))}
@@ -663,7 +665,7 @@ export default function AboutPage() {
           {/* BAL OLDAL */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-xl font-serif mb-4">Szakmai háttér</h2>
+              <h2 className="text-xl font-serif text-[#48969f] mb-4">Szakmai háttér</h2>
               <p className="leading-relaxed text-[#555]">
                 Mentálhigiénés segítőként integratív szemléletben dolgozom.
                 Szakmai utam során olyan megközelítések iránt érdeklődtem,
@@ -673,7 +675,7 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-serif mb-3">Szemléleti alapok</h3>
+              <h3 className="text-lg font-serif  text-[#48969f]  mb-3">Szemléleti alapok</h3>
               <ul className="space-y-2 text-[#555] leading-relaxed">
                 <li>• pszichodinamikus gondolkodás</li>
                 <li>• érzelmi biztonság</li>
@@ -684,7 +686,7 @@ export default function AboutPage() {
 
           {/* JOBB OLDAL */}
           <div className="space-y-6">
-            <h2 className="text-xl font-serif">Képzések és tanulmányok</h2>
+            <h2 className="text-xl font-serif  text-[#48969f] ">Képzések és tanulmányok</h2>
 
             <ul className="space-y-2 text-[#555] leading-relaxed">
               <li>• Mentálhigiénés segítő képzés</li>
@@ -692,7 +694,7 @@ export default function AboutPage() {
               <li>• Testorientált szemléletű továbbképzések</li>
             </ul>
 
-            <p className="text-sm text-[#777]">
+            <p className="text-sm text-[#777] pt-20">
               Ez a felsorolás nem a teljességet, hanem a szakmai irányultságot
               kívánja megmutatni.
             </p>
@@ -701,7 +703,14 @@ export default function AboutPage() {
       </section>
 
       {/* ZÁRÁS */}
-      <section className="bg-[#4f8f8a] text-white text-center py-24">
+      <section className="relative overflow-hidden bg-[#6fa7aa] text-white text-center py-24">
+          <div className="absolute right-0 top-30 -translate-y-1/2 opacity-30 hidden lg:block">
+    <img
+      src={Botanika}
+      alt=""
+      className="w-[260px]"
+    />
+  </div>
         <div className="max-w-xl mx-auto px-6">
           <p className="text-xl leading-relaxed">
             Itt nem kell megfelelni. Nem kell jól lenni. Csak jelenlét van,
