@@ -24,7 +24,7 @@ export default function FAQGroup() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-8 sm:py-20 bg-white">
       <div className="max-w-3xl mx-auto px-6">
 
         <h2 className="text-2xl font-serif text-center text-[#2f6f6b] mb-10">

@@ -146,8 +146,8 @@ export default function HomePage() {
       </section> */}
 
       {/* SUPPORT */}
-      <section className="bg-[#f4f6f5] py-20 px-6">
-  <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section className="bg-[#f4f6f5] py-5 sm:py-20 px-6">
+  <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 sm:gap-16 items-center">
     
     <img src={Stuavegg} className="rounded-2xl shadow-md" />
 
@@ -175,10 +175,10 @@ export default function HomePage() {
 </section>
       {/* HOW I WORK */}
 
-<section className="bg-[#e6efee] py-20 px-6 text-center">
+<section className="bg-[#e6efee] py-5 sm:py-20 px-6 text-center">
   <div className="max-w-5xl mx-auto">
 
-    <h2 className="text-3xl font-serif mb-12 text-[#2f6f6b]">
+    <h2 className="text-3xl font-serif mb-6 sm:mb-12 text-[#2f6f6b]">
       Hogyan dolgozom?
     </h2>
 
@@ -212,8 +212,8 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-      <section className="bg-white py-24 px-6">
-  <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+      <section className="bg-white py-6 sm:py-24 px-6">
+  <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-5 sm:gap-20 items-center">
 
     <div className="max-w-md">
       <h2 className="text-3xl font-serif mb-6 text-[#2f6f6b]">
@@ -240,10 +240,10 @@ export default function HomePage() {
     />
   </div>
 </section>
-<section className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-aboreto mb-12">Rólam mondták</h2>
+<section className="max-w-6xl mx-auto px-4 py-8 sm:py-16">
+        <h2 className="text-4xl font-aboreto mb-6 sm:mb-12">Rólam mondták</h2>
 
-        <div className="grid md:grid-cols-3 gap-12 text-herodarkseablue">
+        <div className="grid md:grid-cols-3 gap-6 sm:gap-12 text-herodarkseablue">
           {/* 1. vélemény */}
           <div>
             <p className="text-lg leading-relaxed">
@@ -251,7 +251,7 @@ export default function HomePage() {
               munkánk során olyan felismerésekhez jutottam, amelyek alapjaiban
               változtatták meg az életemhez való hozzáállásom."
             </p>
-            <p className="mt-6 font-semibold">Katalin M.</p>
+            <p className="mt-2 sm:mt-6 font-semibold">Katalin M.</p>
           </div>
 
           {/* 2. vélemény */}
@@ -261,7 +261,7 @@ export default function HomePage() {
               figyelmes, pontosan kérdez, és segít meglátni az összefüggéseket,
               amiket egyedül nem vettem volna észre."
             </p>
-            <p className="mt-6 font-semibold">Dávid P.</p>
+            <p className="mt-2 sm:mt-6 font-semibold">Dávid P.</p>
           </div>
 
           {/* 3. vélemény */}
@@ -272,13 +272,13 @@ export default function HomePage() {
               átírni, amelyek régóta bennem voltak. Hálás vagyok az egész
               folyamatért."
             </p>
-            <p className="mt-6 font-semibold">Eszter L.</p>
+            <p className="mt-2 sm:mt-6 font-semibold">Eszter L.</p>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="text-center py-24 px-6 bg-[#5f9f9a] text-white/90">
+      <section className="text-center py-10 sm:py-24 px-6 bg-[#5f9f9a] text-white/90">
   <div className="max-w-2xl mx-auto">
 
     <h2 className="text-2xl md:text-3xl font-serif mb-8 leading-relaxed">

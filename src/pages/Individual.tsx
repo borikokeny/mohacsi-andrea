@@ -4,15 +4,15 @@ import FAQ from "../components/FAQ";
 
 export default function Individual() {
   return (
-    <section className="max-w-6xl mx-auto px-0 sm:px-6 py-8 space-y-8">
+    <section className="max-w-6xl mx-auto px-0 sm:px-6 sm:py-8 sm:space-y-8">
 
       {/* HERO TEXT + IMAGE */}
-      <div className="grid md:grid-cols-2 gap-12 items-stretch">
+      <div className="grid md:grid-cols-2 sm:gap-12 items-stretch">
         <div className="h-full">
           <img
             src={Profile}
             alt="stua"
-            className="w-full h-full object-cover max-h-[480px] rounded-lg shadow-md"
+            className="w-full h-full object-cover max-h-[480px] rounded-none md:rounded-lg shadow-md"
           />
         </div>
 

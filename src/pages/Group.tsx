@@ -37,7 +37,7 @@ export default function Group() {
           </div>
         </div>
       </section>
-      <section className="py-16 text-center">
+      <section className="py-8 sm:py-16 text-center">
         <div className="max-w-3xl mx-auto px-6 space-y-6">
           <h2 className="text-3xl font-serif text-[#2f6f6b]">
             Hidak Önmagunkhoz
@@ -56,7 +56,7 @@ export default function Group() {
           </p>
         </div>
       </section>
-      <section className="bg-[#f4f6f5] py-20">
+      <section className="bg-[#f4f6f5] py-8 sm:py-20">
         <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 text-[#444] leading-relaxed">
           <p>
             Csoportjaink ebben az úton levésben kísérnek – hogy ne csak
@@ -82,7 +82,7 @@ export default function Group() {
           </p>
         </div>
       </section>
-      <section className="py-20">
+      <section className="py-8 sm:py-20">
         <div className="max-w-3xl mx-auto px-6">
           <h3 className="text-2xl font-serif text-[#2f6f6b] mb-10 text-center">
             A folyamat
@@ -110,7 +110,7 @@ export default function Group() {
           </ol>
         </div>
       </section>
-      <section className="bg-[#e6efee] py-20">
+      <section className="bg-[#e6efee] py-8 sm:py-20">
         <div className="max-w-5xl mx-auto px-6">
           <h3 className="text-2xl font-serif text-[#2f6f6b] mb-8 text-center">
             Várunk téged, ha
@@ -123,7 +123,7 @@ export default function Group() {
       <div className="max-w-3xl mx-auto">
         <FAQGroup />
       </div>
-      <section className="bg-[#4f8f8a] text-white text-center py-24">
+      <section className="bg-[#4f8f8a] text-white text-center py-8 sm:py-24">
         <div className="max-w-xl mx-auto px-6">
           <h3 className="text-2xl md:text-3xl font-serif mb-6">
             Ha úgy érzed, megszólít ez az út, szeretettel várunk.

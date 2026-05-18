@@ -74,7 +74,7 @@ export default function AboutPage() {
       <img
         src={Portre_cut}
         alt="Mohácsi Andrea"
-        className="h-[340px] w-full object-cover object-top"
+        className="h-[340px] w-full object-cover object-top object-left"
       />
 
       {/* Wave */}
@@ -389,7 +389,7 @@ export default function AboutPage() {
       {/* SZEMLÉLET */}
       <section
         id="szemlelet"
-        className="relative overflow-hidden bg-[#f4f9f9] py-24"
+        className="relative overflow-hidden bg-[#f4f9f9] py-12 sm:py-24"
       >
         {/* mandala */}
         <div className="absolute left-[-220px] top-[-90px] opacity-[0.3] hidden lg:block">
@@ -400,12 +400,12 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-12">
           {/* heading */}
           {/* <div className="max-w-2xl mb-10"> */}
-          <div className="max-w-3xl mb-14 lg:ml-24">
+          <div className="max-w-3xl mb-8 sm:mb-14 lg:ml-24">
             <h2 className="text-4xl md:text-4xl font-serif text-[#24484c] leading-tight mb-8">
               Integratív szemlélet
             </h2>
 
-            <div className="w-24 h-[2px]  mb-6" />
+            <div className="w-24 h-[2px] sm:mb-6" />
 
             <p className="text-2xl leading-[1.8] text-[#3c4343]">
               Integratív szemlélettel dolgozom, amelyben a testi érzetek, az
@@ -415,7 +415,7 @@ export default function AboutPage() {
           </div>
 
           {/* columns */}
-          <div className="grid md:grid-cols-2 gap-14 text-lg leading-[2] text-[#3f4444]">
+          <div className="grid md:grid-cols-2 gap-8 sm:gap-14 text-lg leading-[2] text-[#3f4444]">
             <div className="space-y-8">
               <p>
                 A közös munka során a megértés, az önreflexió és a belső
@@ -492,13 +492,30 @@ export default function AboutPage() {
       </section> */}
 
       {/* HOGYAN DOLGOZOM */}
-      <div className="h-40 bg-[#6fa7aa] flex justify-center items-center">
+      {/* MOBILE */}
+<div className="bg-[#6fa7aa] px-8 py-12 text-center md:hidden">
+  <h2 className="text-sm uppercase tracking-[0.18em] leading-relaxed text-white">
+    Nem módszerekkel,
+    <br />
+    hanem szemlélettel dolgozom
+  </h2>
+</div>
+
+{/* DESKTOP */}
+<div className="hidden h-40 items-center justify-center bg-[#6fa7aa] md:flex">
+  <div className="inline-block border border-[#ddd8d1] bg-white/60 px-10 py-8">
+    <h2 className="text-sm uppercase tracking-[0.28em] leading-relaxed text-[#4a4a46]">
+      Nem módszerekkel, hanem szemlélettel dolgozom
+    </h2>
+  </div>
+</div>
+      {/* <div className="h-40 bg-[#6fa7aa] flex justify-center items-center">
         <div className="inline-block border border-[#ddd8d1] bg-white/60 px-10 py-8">
           <h2 className="text-[11px] md:text-sm uppercase tracking-[0.28em] text-[#4a4a46] leading-relaxed ">
             Nem módszerekkel, hanem szemlélettel dolgozom
           </h2>
         </div>
-      </div>
+      </div> */}
       <section
         id="hogyan"
         className="relative bg-[#f8f6f2] py-12  overflow-hidden"
@@ -604,11 +621,11 @@ export default function AboutPage() {
       {/* MÓDSZEREK */}
       <section
         id="modszer"
-        className="relative bg-[#f8fbfb] py-28 overflow-hidden"
+        className="relative bg-[#f8fbfb] py-10 sm:py-28 overflow-hidden"
       >
         <div className="max-w-7xl mx-auto px-6">
           {/* heading */}
-          <div className="text-center mb-20">
+          <div className="text-center mb-10 sm:mb-20">
             <h2 className="text-4xl md:text-5xl font-serif text-[#2f6f6b] mb-6">
               Eszközök és megközelítések
             </h2>
@@ -621,7 +638,7 @@ export default function AboutPage() {
             {methods.map((method, i) => (
               <div
                 key={i}
-                className="group bg-white/70 backdrop-blur-sm border border-[#dce7e7] rounded-[6px] px-8 py-10 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.04)]"
+                className="group bg-white/70 backdrop-blur-sm border border-[#dce7e7] rounded-[6px] px-8 py-6 sm:py-10 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,0,0,0.04)]"
               >
                 {/* icon */}
                 <div className="mb-8 flex justify-center">
@@ -635,12 +652,12 @@ export default function AboutPage() {
                 </div>
 
                 {/* title */}
-                <h3 className="text-xl font-serif text-[#29565a] mb-5 leading-snug min-h-[64px]">
+                <h3 className="text-xl font-serif text-[#29565a] sm:mb-5 leading-snug min-h-[64px]">
                   {method.title}
                 </h3>
 
                 {/* text */}
-                <p className="text-[#4a4f4f] leading-[1.9] text-[15px] mb-8">
+                <p className="text-[#4a4f4f] leading-[1.9] text-[15px] sm:mb-8">
                   {method.description}
                 </p>
 
@@ -671,8 +688,8 @@ export default function AboutPage() {
       </section> */}
 
       {/* SZAKMAI HÁTTÉR */}
-      <section id="hatter" className="bg-[#f4f6f5] py-20">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+      <section id="hatter" className="bg-[#f4f6f5] py-8 sm:py-20">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-6 sm:gap-16">
           {/* BAL OLDAL */}
           <div className="space-y-8">
             <div>
@@ -688,7 +705,7 @@ export default function AboutPage() {
             </div>
 
             <div>
-              <h3 className="text-lg font-serif  text-[#48969f]  mb-3">
+              <h3 className="text-lg font-serif text-[#48969f] mb-1 sm:mb-3">
                 Szemléleti alapok
               </h3>
               <ul className="space-y-2 text-[#555] leading-relaxed">
@@ -700,8 +717,8 @@ export default function AboutPage() {
           </div>
 
           {/* JOBB OLDAL */}
-          <div className="space-y-6">
-            <h2 className="text-xl font-serif  text-[#48969f] ">
+          <div className="space-y-2 sm:space-y-6">
+            <h2 className="text-xl font-serif text-[#48969f] ">
               Képzések és tanulmányok
             </h2>
 
@@ -711,7 +728,7 @@ export default function AboutPage() {
               <li>• Testorientált szemléletű továbbképzések</li>
             </ul>
 
-            <p className="text-sm text-[#777] pt-20">
+            <p className="text-sm text-[#777] pt-6 sm:pt-20">
               Ez a felsorolás nem a teljességet, hanem a szakmai irányultságot
               kívánja megmutatni.
             </p>
@@ -720,7 +737,7 @@ export default function AboutPage() {
       </section>
 
       {/* ZÁRÁS */}
-      <section className="relative overflow-hidden bg-[#6fa7aa] text-white text-center py-24">
+      <section className="relative overflow-hidden bg-[#6fa7aa] text-white text-center py-12 sm:py-24">
         <div className="absolute right-0 top-30 -translate-y-1/2 opacity-30 hidden lg:block">
           <img src={Botanika} alt="" className="w-[260px]" />
         </div>
