@@ -3,6 +3,7 @@ import Portre from "../images/Portre.jpg";
 import Portre_home from "../images/Portre_home.jpg";
 import Home_hero from "../images/Home_hero_optimized_200.jpg";
 import Plant from "../images/Plant.jpg";
+import Portre_mobile from "../images/Home_hero_mobile.jpg";
 import Stuavegg from "../images/Stuavegg.jpg";
 
 export default function HomePage() {
@@ -11,12 +12,15 @@ export default function HomePage() {
 <section className="relative overflow-hidden">
   {/* Background image */}
   <div className="absolute inset-0">
-    <img
+    {/* <img
       src={Home_hero}
       alt="Mohácsi Andrea"
       className="h-full w-full object-cover object-top"
-    />
-
+    /> */}
+<picture>
+  <source media="(max-width: 768px)" srcSet={Portre_mobile} />
+  <img src={Home_hero} />
+</picture>
     {/* Dark overlay */}
     <div className="absolute inset-0 bg-black/8" />
 
