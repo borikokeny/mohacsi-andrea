@@ -15,7 +15,7 @@ export default function HomePage() {
       <img
         src={Home_hero}
         alt="Mohácsi Andrea"
-        className="h-full w-full object-cover object-center"
+        className="h-full w-full object-cover object-top"
       />
 
       {/* Overlays */}

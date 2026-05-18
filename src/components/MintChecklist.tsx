@@ -26,7 +26,7 @@ export default function MintChecklist({
   className?: string;
 }) {
   // Icon: pipa (default) vagy csillag (useStar=true)
-  const Icon = ({ title = "jelölő" }: { title?: string }) =>
+  const Icon = () =>
     useStar ? (
       // csillag ikon
       <svg
