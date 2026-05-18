@@ -9,79 +9,105 @@ import Stuavegg from "../images/Stuavegg.jpg";
 export default function HomePage() {
   return (
     <main className="bg-[#F4F1EC] text-[#2F2F2F]">
-<section className="relative overflow-hidden">
-  {/* Background image */}
-  <div className="absolute inset-0">
-    {/* <img
-      src={Home_hero}
-      alt="Mohácsi Andrea"
-      className="h-full w-full object-cover object-top"
-    /> */}
-<picture>
-  <source media="(max-width: 768px)" srcSet={Portre_mobile} />
-  <img src={Home_hero} />
-</picture>
-    {/* Dark overlay */}
-    <div className="absolute inset-0 bg-black/8" />
+      <section className="relative overflow-hidden">
+  {/* DESKTOP HERO */}
+  <div className="hidden md:block">
+    {/* Background image */}
+    <div className="absolute inset-0">
+      <img
+        src={Home_hero}
+        alt="Mohácsi Andrea"
+        className="h-full w-full object-cover object-center"
+      />
 
-    {/* Soft gradient overlay */}
-    <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
+      {/* Overlays */}
+      <div className="absolute inset-0 bg-black/8" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
+    </div>
+
+    {/* Desktop content */}
+    <div className="relative mx-auto flex min-h-[620px] max-w-[1440px] items-center px-6 py-24 md:px-12 lg:px-20">
+      <div className="max-w-2xl text-left text-white">
+        <h1 className="mb-8 font-serif text-5xl leading-tight md:text-6xl">
+          Biztonságos tér
+          <br />
+          a valódi változáshoz
+        </h1>
+
+        <div className="mb-8 h-[2px] w-24 bg-[#72b7b1]" />
+
+        <p className="max-w-xl text-lg leading-9 text-white/90 md:text-xl">
+          Egyéni és csoportos folyamatok azoknak,
+          akik szeretnének jobban kapcsolódni
+          önmagukhoz, tisztábban érezni,
+          mire van szükségük és megtanulni
+          képviselni magukat kapcsolataikban.
+        </p>
+      </div>
+    </div>
+    <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+        <svg
+          className="relative block w-[calc(100%+1.3px)] h-[60px]"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,64L80,74.7C160,85,320,107,480,106.7C640,107,800,85,960,74.7C1120,64,1280,64,1360,64L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+            className="fill-[#6fa7aa]"
+          />
+        </svg>
+      </div>
   </div>
 
-  {/* Content */}
-  <div className="relative mx-auto flex min-h-[620px] max-w-[1440px] items-center px-6 py-24 md:px-12 lg:px-20">
-    <div className="max-w-2xl text-white text-left">
-     
+  {/* MOBILE HERO */}
+  <div className="md:hidden bg-[#f8f6f3]">
+    
+    {/* Image */}
+    <div className="relative">
+      <img
+        src={Portre_mobile}
+        alt="Mohácsi Andrea"
+        className="w-full object-cover"
+      />
 
-      {/* Heading */}
-      <h1 className="mb-8 font-serif text-5xl leading-tight md:text-6xl">
+      {/* Wave */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+        <svg
+          className="relative block w-[calc(100%+1.3px)] h-[60px]"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,64L80,74.7C160,85,320,107,480,106.7C640,107,800,85,960,74.7C1120,64,1280,64,1360,64L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+            className="fill-[#6fa7aa]"
+          />
+        </svg>
+      </div>
+    </div>
+
+    {/* Text content */}
+    <div className="px-6 py-12 text-[#2d2d2d]">
+      <h1 className="mb-6 font-serif text-5xl leading-tight text-[#2f6f6b]">
         Biztonságos tér
         <br />
         a valódi változáshoz
       </h1>
-{/* Decorative line */}
+
       <div className="mb-8 h-[2px] w-24 bg-[#72b7b1]" />
-      {/* Text */}
-      <p className="mb-12 max-w-xl text-lg leading-9 text-white/90 md:text-xl">
+
+      <p className="text-lg leading-9">
         Egyéni és csoportos folyamatok azoknak,
         akik szeretnének jobban kapcsolódni
         önmagukhoz, tisztábban érezni,
         mire van szükségük és megtanulni
         képviselni magukat kapcsolataikban.
       </p>
-
-      {/* Buttons */}
-      {/* <div className="flex flex-col gap-4 sm:flex-row">
-        <a
-          href="/egyeni"
-          className="rounded-full bg-[#5FA9A1] px-8 py-4 text-center text-sm tracking-wide text-white transition hover:bg-[#4c9189]"
-        >
-          EGYÉNI FOLYAMATOK
-        </a>
-
-        <a
-          href="/csoportos"
-          className="rounded-full border border-white/70 px-8 py-4 text-center text-sm tracking-wide text-white transition hover:bg-white hover:text-[#2c2c2c]"
-        >
-          CSOPORTOS LEHETŐSÉGEK
-        </a>
-      </div> */}
     </div>
   </div>
-  <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-  <svg
-    className="relative block w-[calc(100%+1.3px)] h-[90px]"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1200 120"
-    preserveAspectRatio="none"
-  >
-    <path
-      d="M0,64L80,74.7C160,85,320,107,480,106.7C640,107,800,85,960,74.7C1120,64,1280,64,1360,64L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
-      className="fill-[#6fa7aa]"
-    />
-  </svg>
-</div>
 </section>
+
       {/* <section className="min-h-[35vh] md:h-[40vh] grid md:grid-cols-[2fr_1fr] items-center bg-gradient-to-br from-[#7fb7b2] via-[#5f9f9a] to-[#3f7f7b]">
     
         <div className="px-6 md:px-12 lg:px-20 py-10 md:py-12 text-left">
