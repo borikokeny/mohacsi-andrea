@@ -1,5 +1,6 @@
 import Stua from "../images/Stua.jpg";
 import Stua_med_sofa from "../images/Stua_med_sofa.jpg";
+import Profile from "../images/MG_1649-2-Edit--2_optimized_200.jpg";
 import FAQ from "../components/FAQ";
 
 export default function Individual() {
@@ -10,7 +11,7 @@ export default function Individual() {
       <div className="grid md:grid-cols-2 gap-12 items-stretch">
         <div className="h-full">
           <img
-            src={Stua}
+            src={Profile}
             alt="stua"
             className="w-full h-full object-cover max-h-[480px] rounded-lg shadow-md"
           />

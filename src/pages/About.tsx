@@ -590,7 +590,7 @@ export default function AboutPage() {
     {/* heading */}
     <div className="text-center mb-20">
 
-      <h2 className="text-4xl md:text-5xl font-serif text-[#24484c] mb-6">
+      <h2 className="text-4xl md:text-5xl font-serif text-[#2f6f6b] mb-6">
         Eszközök és megközelítések
       </h2>
 

@@ -18,7 +18,7 @@ export default function HomePage() {
     />
 
     {/* Dark overlay */}
-    <div className="absolute inset-0 bg-black/25" />
+    <div className="absolute inset-0 bg-black/8" />
 
     {/* Soft gradient overlay */}
     <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
@@ -47,7 +47,7 @@ export default function HomePage() {
       </p>
 
       {/* Buttons */}
-      <div className="flex flex-col gap-4 sm:flex-row">
+      {/* <div className="flex flex-col gap-4 sm:flex-row">
         <a
           href="/egyeni"
           className="rounded-full bg-[#5FA9A1] px-8 py-4 text-center text-sm tracking-wide text-white transition hover:bg-[#4c9189]"
@@ -61,9 +61,22 @@ export default function HomePage() {
         >
           CSOPORTOS LEHETŐSÉGEK
         </a>
-      </div>
+      </div> */}
     </div>
   </div>
+  <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+  <svg
+    className="relative block w-[calc(100%+1.3px)] h-[90px]"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1200 120"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M0,64L80,74.7C160,85,320,107,480,106.7C640,107,800,85,960,74.7C1120,64,1280,64,1360,64L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+      className="fill-[#6fa7aa]"
+    />
+  </svg>
+</div>
 </section>
       {/* <section className="min-h-[35vh] md:h-[40vh] grid md:grid-cols-[2fr_1fr] items-center bg-gradient-to-br from-[#7fb7b2] via-[#5f9f9a] to-[#3f7f7b]">
     
@@ -111,7 +124,7 @@ export default function HomePage() {
     <img src={Stuavegg} className="rounded-2xl shadow-md" />
 
     <div className="max-w-md">
-      <h2 className="text-3xl font-serif mb-6">
+      <h2 className="text-3xl font-serif mb-6 text-[#2f6f6b]">
         Miben tudlak támogatni
       </h2>
 
@@ -137,7 +150,7 @@ export default function HomePage() {
 <section className="bg-[#e6efee] py-20 px-6 text-center">
   <div className="max-w-5xl mx-auto">
 
-    <h2 className="text-3xl font-serif mb-12">
+    <h2 className="text-3xl font-serif mb-12 text-[#2f6f6b]">
       Hogyan dolgozom?
     </h2>
 
@@ -175,7 +188,7 @@ export default function HomePage() {
   <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-20 items-center">
 
     <div className="max-w-md">
-      <h2 className="text-3xl font-serif mb-6">
+      <h2 className="text-3xl font-serif mb-6 text-[#2f6f6b]">
         Bemutatkozás
       </h2>
 
