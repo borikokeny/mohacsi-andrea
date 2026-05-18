@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 export default function FAQGroup() {
-  const [open, setOpen] = useState(null);
+  // const [open, setOpen] = useState(null);
+  const [open, setOpen] = useState<number | null>(null);
 
   const items = [
     {
