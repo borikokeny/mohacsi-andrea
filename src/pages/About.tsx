@@ -1,7 +1,4 @@
-import Terepauta from "../images/terepauta.jpg";
-import Portre_about from "../images/Portre_about.jpg";
 import Portre_cut from "../images/Portre_about_cut.jpg";
-import Line_logo from "../images/Line_logo.png";
 import Botanika from "../images/Botanika.png";
 import Mandala_teal from "../images/Mandala_teal.png";
 import { methods } from "../data/methods";
