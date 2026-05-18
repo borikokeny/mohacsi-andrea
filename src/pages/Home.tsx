@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
-import Portre from "../images/Portre.jpg";
 import Portre_home from "../images/Portre_home.jpg";
 import Home_hero from "../images/Home_hero_optimized_200.jpg";
-import Plant from "../images/Plant.jpg";
 import Stuavegg from "../images/Stuavegg.jpg";
 
 export default function HomePage() {
