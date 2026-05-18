@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * MintChecklist
  * - Tailwind CSS osztályokat használ (a te configodban van `heromenta`).

@@ -1,5 +1,4 @@
 import GroupCard from "../components/GroupCard";
-import type { GroupCardProps } from "../components/GroupCard";
 import { groups } from "../data/groups";
 
 export default function AktualisCsoportok() {
