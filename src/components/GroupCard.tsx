@@ -91,7 +91,21 @@ export default function GroupCard({
               e.stopPropagation();
               navigate(`/group/${slug}`);
             }}
-            className="text-[#2f6f6b] underline text-sm"
+            className="
+inline-flex
+items-center
+gap-2
+rounded-full
+border
+border-[#6fa7aa]
+px-5
+py-2
+text-sm
+text-[#2f6f6b]
+transition
+hover:bg-[#6fa7aa]
+hover:text-white
+"
           >
             {currentStatus.button} →
           </button>

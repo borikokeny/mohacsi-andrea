@@ -13,7 +13,7 @@ export default function Footer() {
 
         {/* KÖZÉP – NAV */}
         <div className="space-y-3 text-sm">
-          <p className="font-medium text-[#2f6f6b]">Oldalak</p>
+          {/* <p className="font-medium text-[#2f6f6b]">Oldalak</p>
 
           <ul className="space-y-2">
             <li>
@@ -41,7 +41,7 @@ export default function Footer() {
                 Kapcsolat
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
 
         {/* JOBB – KAPCSOLAT */}
