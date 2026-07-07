@@ -27,7 +27,7 @@ export const faqData = [
   {
     question: "Hogyan lehet jelentkezni?",
     answer:
-      "A kapcsolatfelvétel e-mailen vagy telefonon keresztül történik. Az egyéni folyamatok tekintetében az első találkozás célja a megismerkedés, megbizonyosodunk arról, hogy tudunk-e együtt dolgozni, a közös munka megfelelő keretet jelent-e mindkettőnk számára.Megbeszéljük a célokat, hogy hová szeretnél eljutni, a közös munka során. Csoportra történő jelentkezésnél egy személyes egyéni beszélgetés előzi meg a csoportba kerülést, amelyen megismerkedünk, lehetőséget adunk további kérdések tisztázására, és előkészítjük a közös munkát.",
+      "A kapcsolatfelvétel e-mailen vagy telefonon keresztül történik. Az egyéni folyamatok tekintetében az első találkozás célja a megismerkedés, megbizonyosodunk arról, hogy tudunk-e együtt dolgozni, a közös munka megfelelő keretet jelent-e mindkettőnk számára. Megbeszéljük a célokat, hogy hová szeretnél eljutni, a közös munka során. Csoportra történő jelentkezésnél egy személyes egyéni beszélgetés előzi meg a csoportba kerülést, amelyen megismerkedünk, lehetőséget adunk további kérdések tisztázására, és előkészítjük a közös munkát.",
   },
   {
     question: "Mi történik, ha nem tudok elmenni a megbeszélt időpontra?",
