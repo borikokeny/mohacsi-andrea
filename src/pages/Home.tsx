@@ -228,9 +228,9 @@ export default function HomePage() {
               még sokfelé jártam az úton, míg most ott vagyok, ahol találkozunk.
       </p>
 
-      <a href="/about" className="text-[#2f6f6b] underline">
+      <Link to="/about" className="text-[#2f6f6b] underline">
         Rólam bővebben →
-      </a>
+      </Link>
     </div>
 
     <img
