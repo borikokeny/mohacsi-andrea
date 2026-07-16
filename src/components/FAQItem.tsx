@@ -31,7 +31,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
           open ? "grid-rows-[1fr] mt-3" : "grid-rows-[0fr]"
         }`}
       >
-        <div className="overflow-hidden text-gray-700 leading-relaxed">
+        <div className="overflow-hidden text-gray-700 leading-relaxed font-serif">
           {answer}
         </div>
       </div>

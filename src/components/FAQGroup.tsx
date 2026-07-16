@@ -13,6 +13,15 @@ export default function FAQGroup() {
       q: "Kell konkrét problémával érkezni?",
       a: "Nem, elég a kíváncsiság és a nyitottság.",
     },
+     {
+      q: "Hogyan lehet jelentkezni?",
+      a: <>
+      A kapcsolatfelvétel e-mailen vagy telefonon keresztül történik. 
+      <br />
+      <br />
+      Csoportra történő jelentkezésnél egy személyes egyéni beszélgetés előzi meg a csoportba kerülést, amelyen megismerkedünk, lehetőséget adunk további kérdések tisztázására, és előkészítjük a közös munkát.
+      </>,
+    },
     {
       q: "Mennyire aktív a segítő?",
       a: "Jelenléttel, kérdésekkel és támogatással kísérem a folyamatot.",
