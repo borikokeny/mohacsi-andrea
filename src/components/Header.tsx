@@ -4,6 +4,10 @@ import Logo_orig from "../images/Logo.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navClass = ({ isActive }: { isActive: boolean }) =>
+  isActive
+    ? "font-semibold text-[#2f6f6b] border-b-2 border-[#2f6f6b] pb-1"
+    : "border-b-2 border-transparent pb-1 hover:text-[#2f6f6b] hover:border-[#2f6f6b] transition-all duration-200";
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
@@ -29,12 +33,22 @@ export default function Header() {
 
         {/* DESKTOP NAV */}
         <nav className="hidden lg:flex gap-8 text-gray-700 font-medium">
-          <NavLink to="/">Főoldal</NavLink>
-          <NavLink to="/individual">Egyéni</NavLink>
-          <NavLink to="/group">Csoportos</NavLink>
-          <NavLink to="/latest">Aktuális</NavLink>
-          <NavLink to="/about">Rólam</NavLink>
-          <NavLink to="/contact">Kapcsolat</NavLink>
+          <NavLink to="/" className={navClass}>Főoldal</NavLink>
+          <NavLink to="/individual" className={navClass}>
+            Egyéni
+          </NavLink>
+          <NavLink to="/group" className={navClass}>
+            Csoportok
+          </NavLink>
+          <NavLink to="/latest" className={navClass}>
+            Aktuális
+          </NavLink>
+          <NavLink to="/about" className={navClass}>
+            Rólam
+          </NavLink>
+          <NavLink to="/contact" className={navClass}>
+            Kapcsolat
+          </NavLink>
         </nav>
 
         {/* HAMBURGER */}
@@ -52,27 +66,27 @@ export default function Header() {
 
           <nav className="flex flex-col gap-6 text-xl font-medium text-[#5a6f6b]">
 
-            <NavLink to="/" onClick={() => setMenuOpen(false)}>
+            <NavLink to="/" className={navClass} onClick={() => setMenuOpen(false)}>
               Főoldal
             </NavLink>
 
-            <NavLink to="/individual" onClick={() => setMenuOpen(false)}>
+            <NavLink to="/individual" className={navClass} onClick={() => setMenuOpen(false)}>
               Egyéni
             </NavLink>
 
-            <NavLink to="/group" onClick={() => setMenuOpen(false)}>
-              Csoportos
+            <NavLink to="/group" className={navClass} onClick={() => setMenuOpen(false)}>
+              Csoportok
             </NavLink>
 
-            <NavLink to="/latest" onClick={() => setMenuOpen(false)}>
+            <NavLink to="/latest" className={navClass} onClick={() => setMenuOpen(false)}>
               Aktuális
             </NavLink>
 
-            <NavLink to="/about" onClick={() => setMenuOpen(false)}>
+            <NavLink to="/about" className={navClass} onClick={() => setMenuOpen(false)}>
               Rólam
             </NavLink>
 
-            <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
+            <NavLink to="/contact" className={navClass} onClick={() => setMenuOpen(false)}>
               Kapcsolat
             </NavLink>
 
