@@ -1,8 +1,9 @@
 import { useState } from "react";
+import type { ReactNode } from "react";
 
 type FAQItemProps = {
   question: string;
-  answer: string;
+  answer: ReactNode;
 };
 
 export default function FAQItem({ question, answer }: FAQItemProps) {
