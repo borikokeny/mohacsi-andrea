@@ -3,7 +3,7 @@ import Portre_home from "../images/Portre_home.jpg";
 import Home_hero from "../images/Home_hero_optimized_200.jpg";
 import Portre_mobile from "../images/Home_hero_mobile.jpg";
 import Stuavegg from "../images/Stuavegg.jpg";
-import Logo from "../images/logo.png";
+import Logo from "../images/Logo.png";
 
 export default function HomePage() {
   return (
