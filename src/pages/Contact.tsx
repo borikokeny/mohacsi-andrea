@@ -1,37 +1,47 @@
 export default function Contact() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-12 font-quicksand">
+    <div className="max-w-5xl mx-auto px-6 py-20">
+      {/* ---------- CÍM ---------- */}
 
-      {/* ----------- OLDAL CÍM ----------- */}
-      <h1 className="text-4xl font-aboreto text-center text-[#48969f] mb-10">
-        Kapcsolat & Hírlevél
-      </h1>
+      <div className="text-center max-w-3xl mx-auto">
+        <h1 className="text-4xl font-aboreto text-[#48969f]">Kapcsolat</h1>
 
-      {/* ----------- HÍRLEVÉL FELIRATKOZÁS ----------- */}
-      <section className="bg-white border border-heromenta/60 rounded-lg p-8 shadow-sm">
-
-        <h2 className="text-2xl font-aboreto text-center text-[#48969f] mb-4">
-          Iratkozz fel hírlevelünkre
-        </h2>
-
-        <p className="text-center text-gray-700 max-w-xl mx-auto mb-6">
-          Elsőként értesülhetsz új csoportokról, programokról és 
-          pszichodráma-műhelyekről. Havonta egyszer küldünk friss híreket — spam nélkül.
+        <p className="mt-8 text-xl text-herodarkseablue leading-relaxed">
+          Ha kérdése van, szeretne jelentkezni egyéni folyamatra vagy csoportra,
+          illetve szeretne többet megtudni a lehetőségekről, keressen
+          bizalommal.
         </p>
 
-        {/* ŰRLAP */}
-        <form className="max-w-md mx-auto flex flex-col gap-4">
+        <div className="w-20 h-[2px] bg-heromenta mx-auto mt-10"></div>
+      </div>
+
+      {/* ---------- HÍRLEVÉL ---------- */}
+
+      <section className="mt-20 bg-[#f6fbfa] rounded-3xl p-10 sm:p-14">
+        <h2 className="text-3xl font-aboreto text-center text-[#48969f] mb-6">
+          Hírlevél
+        </h2>
+
+        <p className="max-w-2xl mx-auto text-center text-gray-700 leading-relaxed mb-10">
+          Szeretne értesülni az induló csoportokról és programokról?
+          <br />
+          <br />
+          Időről időre új önismereti csoportokat, pszichodráma alkalmakat,
+          workshopokat és szakmai írásokat osztok meg. Ha szeretne ezekről
+          elsőként értesülni, iratkozzon fel az értesítőre.
+        </p>
+
+        <form className="max-w-lg mx-auto flex flex-col gap-5">
           <input
             type="text"
-            placeholder="Neved"
-            className="border rounded-md px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-heromenta"
+            placeholder="Név"
+            className="border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-heromenta"
           />
 
           <input
             type="email"
-            placeholder="Email címed"
-            className="border rounded-md px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-heromenta"
-            required
+            placeholder="E-mail cím"
+            className="border rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-heromenta"
           />
 
           <button
@@ -43,19 +53,45 @@ export default function Contact() {
         </form>
       </section>
 
-      {/* ----------- ELÉRHETŐSÉGEK ----------- */}
-      <section className="mt-12 text-center">
-        <h2 className="text-2xl font-aboreto text-[#48969f] mb-4">Elérhetőségek</h2>
+      {/* ---------- ELÉRHETŐSÉGEK ---------- */}
 
-        <p className="mb-2">
-          <strong>Email: </strong> terkeponmagamhoz@gmail.com
-        </p>
+      <section className="mt-20">
+        <h2 className="text-3xl font-aboreto text-center text-[#48969f] mb-12">
+          Elérhetőségek
+        </h2>
 
-        <p className="mb-2">
-          <strong>Telefon: </strong> Mohácsi Andrea 30/383-9838
-        </p>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 text-center">
+            <h3 className="text-xl font-semibold mb-3">E-mail</h3>
+
+            <a
+              href="mailto:terkeponmagamhoz@gmail.com"
+              className="text-herodarkseablue hover:text-heromenta transition"
+            >
+              hidak.onismeret@gmail.com
+            </a>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 text-center">
+            <h3 className="text-xl font-semibold mb-3">Telefon</h3>
+
+            <a
+              href="tel:+36303839838"
+              className="text-herodarkseablue hover:text-heromenta transition"
+            >
+              Mohácsi Andrea
+              <br />
+              +36 30 383 9838
+            </a>
+          </div>
+        </div>
       </section>
 
+      {/* ---------- ZÁRÓ GONDOLAT ---------- */}
+
+      <p className="text-center text-gray-500 italic mt-20">
+        Minden kapcsolat egy első beszélgetéssel kezdődik.
+      </p>
     </div>
   );
 }
