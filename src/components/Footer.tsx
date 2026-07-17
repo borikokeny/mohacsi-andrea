@@ -49,7 +49,7 @@ export default function Footer() {
           <p className="font-medium text-[#2f6f6b]">Kapcsolat</p>
 
           <ul className="space-y-2">
-            <li>Email: terkeponmagamhoz@gmail.com</li>
+            <li>Email: hidak.onismeret@gmail.com</li>
             <li>Telefon: +36 30 383 9838</li>
             <li>
               <a

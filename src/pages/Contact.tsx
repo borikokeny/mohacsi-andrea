@@ -65,7 +65,7 @@ export default function Contact() {
             <h3 className="text-xl font-semibold mb-3">E-mail</h3>
 
             <a
-              href="mailto:terkeponmagamhoz@gmail.com"
+              href="mailto:hidak.onismeret@gmail.com"
               className="text-herodarkseablue hover:text-heromenta transition"
             >
               hidak.onismeret@gmail.com
