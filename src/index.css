@@ -8,6 +8,39 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 /* ---------- GLOBAL TEXT STYLES ---------- */
-p, button, span, input, label, li {
+/* p, button, span, input, label, li {
   @apply font-quicksand;
+} */
+
+p, button, span, input, label, li {
+  @apply font-serif;
+}
+
+@layer components {
+  /* .chip {
+    @apply px-4 py-2 text-sm 
+           bg-white
+           border border-[#dcdcdc] 
+           rounded-full 
+           transition-colors duration-200
+           hover:bg-[#4f8f8a] hover:text-white hover:border-[#4f8f8a];
+  } */
+   .chip {
+  @apply px-5 py-2 rounded-full
+  border border-[#6fa7aa]
+  text-[#2f5f63]
+  text-sm
+  tracking-wide
+  bg-white/70
+  transition-all duration-300;
+}
+  /* .chip:hover {
+  background-color: #4f8f8a !important;
+  color: white;
+} */
+ .chip:hover {
+  background-color: #6fa7aa !important;
+  color: white;
+  /* @apply bg-[#6fa7aa] text-white; */
+}
 }

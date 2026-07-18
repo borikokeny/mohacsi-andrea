@@ -1,510 +1,142 @@
-// import { client } from "../services/contentful";
-// import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-// import { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
-// import Pafrany from "../images/Pafrany.jpg";
-// import Folyo from "../images/Folyo.jpg";
-// import Erdo from "../images/Erdo.jpg";
-// import Csillag from "../images/kiscsillag.png";
-
-// export default function Group() {
-//   const [page, setPage] = useState<any>(null);
-
-//   useEffect(() => {
-//     const fetchPage = async () => {
-//       const entries = await client.getEntries({
-//         content_type: "page",
-//         "fields.slug": "fooldal", // a te valós slug értéked
-//       });
-
-//       if (entries.items.length > 0) {
-//         setPage(entries.items[0]);
-//       }
-//     };
-
-//     fetchPage();
-//   }, []);
-
-//   if (!page) return <div>Loading...</div>;
-
-//   return (
-//     <div className="max-w-6xl mx-auto px-4">
-//       <div className="relative h-96">
-//         {/* Háttérkép */}
-//         <div
-//           className="absolute inset-0 bg-cover bg-center"
-//           style={{ backgroundImage: `url(${Pafrany})` }}
-//         ></div>
-
-//         {/* Átlátszó overlay */}
-//         <div className="absolute inset-0 bg-black/30"></div>
-
-//         {/* Tartalom */}
-//         <div className="relative h-full flex items-center">
-//           <div className="p-8 shadow-md ms-8 max-w-xl">
-//             <h1 className="text-3xl font-extrabold text-stone-50 mb-3">
-//               Lásd meg életed mintáit és alakítsd őket tudatosan!
-//             </h1>
-//             <div className="h-0.5 bg-white/50 mb-6" />
-//             <h2 className="text-stone-50">
-//               A pszichodráma hatékony út az önismerethez, a fejlődéshez és a
-//               belső harmónia megteremtéséhez.
-//             </h2>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* <div className="relative">
-//    <div
-//         className="absolute inset-0 h-96 bg-cover bg-center"
-//         style={{ backgroundImage: `url(${Pafrany})` }}
-//       >
-//         <div className="relative max-w-7xl mx-auto px-6 md:px-8 py-24 md:py-32">
-//           <div className="max-w-3xl md:max-w-2xl bg-white/60 backdrop-blur-sm p-6 md:p-10 rounded-md shadow-md">
-// <div className="w-2/3 ms-5 pt-5">
-//   <h1 className="text-3xl text-stone-50 font-extrabold ">
-//           Lásd meg életed mintáit – és alakítsd őket tudatosan!
-//         </h1>
-//         <h2 className="text-stone-50">
-//           A pszichodráma hatékony út az önismerethez, a fejlődéshez és a belső
-//           harmónia megteremtéséhez.{" "}
-//         </h2>
-//         </div>
-//           </div>
-
-//         </div>
-
-//       </div>
-//       </div> */}
-
-//       <h2 className="mt-3 text-2xl">Pszichodráma Csoportok</h2>
-//       <h3 className="mb-3">
-//         180 órás, 18 alkalmas hétvégi önismereti csoportok Budapesten
-//       </h3>
-//       <p>
-//         {" "}
-//         Hogyan igazodunk el önmagunkban, kapcsolatainkban, életünkben, a
-//         világban? Milyen belső térképek szerint haladunk – és mikor érezzük,
-//         hogy új irányra, új utakra van szükségünk?
-//       </p>
-//       <p className="mt-2">
-//         Csoportunk ebben az úton levésben kísér – hogy ne csak elindulj, de meg
-//         is érkezz önmagadhoz. Mindezt egy közösen létrehozott, biztonságos
-//         térben, az itt és most jelenében. A csoportban támogatást kaphatsz a
-//         változtatáshoz, továbblépéshez, fejlődéshez, új mintákat, új
-//         megoldásokat kaphatsz és próbálhatsz ki.{" "}
-//       </p>
-//       <p className="mt-3">
-//         <strong>Időbeosztás: </strong>9:00 órától 18:00 óráig
-//       </p>
-
-//       <p>
-//         <strong>Helyszín: </strong> Budapest (jól megközelíthető helyen)
-//       </p>
-//       <p>
-//         <strong>Csoportok: </strong> A program 10-12 fős csoporttal indul. A
-//         jelentkezéshez nincs szükség semmilyen előzetes ismeretre, csak hozd
-//         magad!
-//       </p>
-
-//       <div className="mt-4">
-//         <h3 className="font-semibold mb-4">Folyamat:</h3>
-
-//         <ol className="space-y-4">
-//           <li className="flex gap-3">
-//             <span className="text-heromenta font-bold">1.</span>
-//             <p>
-//               A csoportba való bekerülést egy díjmentes személyes egyéni
-//               beszélgetés előzi meg, ahol megismerkedünk, lehetőséget adunk
-//               további kérdések tisztázására és előkészítjük a közös munkát.
-//             </p>
-//           </li>
-
-//           <li className="flex gap-3">
-//             <span className="text-heromenta font-bold">2.</span>
-//             <p>
-//               A csoport az első két alkalommal nyitott, a második alkalommal
-//               történik az elköteleződés, a harmadik alkalomtól zárt csoportként
-//               működik tovább.{" "}
-//             </p>
-//           </li>
-
-//           <li className="flex gap-3">
-//             <span className="text-heromenta font-bold">3.</span>
-//             <p>
-//               A következő alkalmak során 3 hetente fogunk találkozni. Egyre
-//               jobban megismerjük egymást és önmagunkat is.
-//             </p>
-//           </li>
-//           <li className="flex gap-3">
-//             <span className="text-heromenta font-bold">3.</span>
-//             <p>
-//               A 18-ik utolsó találkozáson lezárjuk a folyamatot és
-//               összefoglaljuk mi történt velünk ebben az időszakban.
-//             </p>
-//           </li>
-//         </ol>
-//       </div>
-//       <div>
-//         <p className="mt-3">
-//           <strong>Jelentkezés: </strong>
-//         </p>
-//         <ul className="list-disc list-inside space-y-1">
-//           <li> e-mail: terkeponmagamhoz@gmail.com</li>
-//           <li>telefon: Mohácsi Andrea 30/383-9838</li>
-//           <li>
-//             Kérünk, ha emailt írsz, írj pár sort magadról, illetve adj meg egy
-//             telefonszámot is, hogy minél előbb meg tudjunk keresni.
-//           </li>
-//         </ul>
-//       </div>
-
-//       <p className="mt-4 mb-6">
-//         <strong>Bővebb információ és időpontok az alábbi linkeken: </strong>
-//       </p>
-//       {/* <h1>{page.fields.heroTitle}</h1>
-//       {documentToReactComponents(page.fields.tartalom)} */}
-//       <div className="">
-//         <div className="flex flex-col md:flex-row">
-//           <div className="col-6 w-1/2">
-//             <img
-//               src={Folyo}
-//               alt="portrait"
-//               className="w-full h-full object-cover"
-//             />
-//           </div>
-
-//           <div className="col-6 bg-heromenta w-1/2 flex flex-col items-center justify-center text-center p-8">
-//             <img src={Csillag} alt="" className="w-16 mb-3" />
-//             <h1 className="text-4xl">Térképeink</h1>
-//             <h2 className="mb-3">180 órás pszichodráma csoport</h2>
-//             <p>2025. májustól Budapesten</p>
-//             {/* <p className="">{documentToReactComponents(page.fields.tartalom)}</p> */}
-//             <Link to="/terkepeink" className="border-2 w-80 p-2 px-4 mt-3">
-//               Részletek &gt;
-//             </Link>
-//           </div>
-//         </div>
-//         <div className="flex flex-col md:flex-row">
-//           <div className="col-6 bg-heromenta w-1/2 flex flex-col items-center justify-center text-center p-8">
-//             <img src={Csillag} alt="" className="w-16 mb-3" />
-//             {/* <h1 className="text-4xl mb-2">{page.fields.heroTitle}</h1> */}
-//             <h1 className="text-4xl mb-2">Belső Tájakon, közös úton</h1>
-//             <h2 className="mb-3">180 órás pszichodráma csoport</h2>
-//             <p>2026. februártól Budapesten</p>
-//             <Link to="/belso-tajakon" className="border-2 w-80 p-2 px-4 mt-3">
-//               Részletek &gt;
-//             </Link>
-//             {/* <p className="">{documentToReactComponents(page.fields.tartalom)}</p> */}
-//           </div>
-//           <div className="col-6 w-1/2">
-//             <img src={Pafrany} alt="" />
-//           </div>
-//         </div>
-//         <div className="flex flex-col md:flex-row">
-//           <div className="col-6 w-1/2">
-//             <img
-//               src={Erdo}
-//               alt="portrait"
-//               className="w-full h-full object-cover"
-//             />
-//           </div>
-
-//           <div className="col-6 bg-heromenta w-1/2 flex flex-col items-center justify-center text-center p-8">
-//             {/* <h1 className="text-2xl">Hidak Önmagunkhoz</h1> */}
-//             <img src={Csillag} alt="" className="w-16 mb-3" />
-//             <h1 className="text-4xl">Mesejáró Térkép</h1>
-//             <h2 className="mb-3">EGYNAPOS ÖNISMERETI WORKSHOP</h2>
-//             <p>2026. márciustól Budapesten</p>
-//             {/* <p className="">{documentToReactComponents(page.fields.tartalom)}</p> */}
-//             <Link to="/mesejaro-terkep" className="border-2 w-80 p-2 px-4 mt-3">
-//               Részletek &gt;
-//             </Link>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-import { client } from "../services/contentful";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import MintChecklist from "../components/MintChecklist";
-
-import Pafrany from "../images/Pafrany.jpg";
-import Folyo from "../images/Folyo.jpg";
-import Erdo from "../images/Erdo.jpg";
-import Csillag from "../images/kiscsillag.png";
+import GroupImage from "../images/Group_hero.jpeg";
+import FAQGroup from "../components/FAQGroup";
 
 export default function Group() {
-  const [page, setPage] = useState<any>(null);
-
-  useEffect(() => {
-    const fetchPage = async () => {
-      const entries = await client.getEntries({
-        content_type: "page",
-        "fields.slug": "fooldal",
-      });
-
-      if (entries.items.length > 0) {
-        setPage(entries.items[0]);
-      }
-    };
-
-    fetchPage();
-  }, []);
-
-  if (!page) return <div>Loading...</div>;
-
   return (
-    <div className="max-w-6xl mx-auto px-4">
-      {/* ---------------- HERO SZEKCIÓ ---------------- */}
-      <div className="relative h-96 rounded-md overflow-hidden mb-10">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${Pafrany})` }}
+    <>
+      <section className="relative h-[420px] overflow-hidden">
+        {/* háttér kép */}
+        <img
+          src={GroupImage}
+          alt="group session"
+          className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/30" />
+        {/* teal overlay */}
+        <div className="absolute inset-0 bg-[#2f6f6b]/40"></div>
 
-        <div className="relative h-full flex items-center px-8">
-          <div className="max-w-xl">
-            <h1 className="text-4xl font-extrabold text-white mb-3">
-              Lásd meg életed mintáit és alakítsd őket tudatosan!
-            </h1>
+        {/* content */}
+        <div className="relative z-10 h-full flex items-center">
+          <div className="max-w-6xl mx-auto px-6 w-full">
+            <div className="max-w-xl">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white leading-tight mb-4">
+                Lásd meg életed mintáit, és alakítsd őket tudatosan
+              </h1>
 
-            <div className="h-0.5 bg-white/40 w-32 mb-4" />
+              <div className="h-px bg-white/40 w-24 mb-6"></div>
 
-            <h2 className="text-white text-lg leading-relaxed">
-              A pszichodráma hatékony út az önismerethez, a fejlődéshez és a
-              belső harmónia megteremtéséhez.
-            </h2>
+              <Link
+                to="/latest"
+                className="inline-block bg-white text-[#2f6f6b] px-6 py-3 rounded-full chip"
+              >
+                Aktuális csoportok
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-
-      {/* ---------------- LEÍRÁS ---------------- */}
-      <section className="space-y-4 mb-10">
-        <h1 className="text-4xl font-semibold">Hidak Önmagunkhoz</h1>
-        <h2 className="text-2xl font-semibold">Pszichodráma Csoportok</h2>
-
-        <h3 className="text-lg">
-          180 órás, 18 alkalmas hétvégi önismereti csoportok Budapesten
-        </h3>
-
-        <p>
-          Hogyan igazodunk el önmagunkban, kapcsolatainkban, életünkben, a
-          világban? Milyen belső térképek szerint haladunk – és mikor érezzük,
-          hogy új irányra, új utakra van szükségünk?
-        </p>
-
-        <p>
-          Csoportunk ebben az úton levésben kísér – hogy ne csak elindulj, de
-          meg is érkezz önmagadhoz. A csoport biztonságos, megtartó tér, ahol új
-          mintákat és megoldásokat próbálhatsz ki.
-        </p>
-
-        <p>
-          <strong>Időbeosztás: </strong> 9:00–18:00
-        </p>
-        <p>
-          <strong>Helyszín: </strong> Budapest (jól megközelíthető helyen)
-        </p>
-        <p>
-          <strong>Csoportok: </strong> 10–12 fős csoportok, előzetes ismeret nem
-          szükséges.
-        </p>
       </section>
+      <section className="py-8 sm:py-16 text-center">
+        <div className="max-w-3xl mx-auto px-6 space-y-6">
+          <h2 className="text-3xl font-serif text-[#2f6f6b]">
+            Hidak Önmagunkhoz
+          </h2>
 
-      {/* ---------------- FOLYAMAT LISTA ---------------- */}
-      <section className="mb-10">
-        <h3 className="font-semibold mb-4 text-xl">Folyamat:</h3>
+          <p className="text-[#555]">Hétvégi önismereti csoportok Budapesten</p>
 
-        <ol className="space-y-4">
-          <li className="flex gap-3">
-            <span className="text-heromenta font-bold">1.</span>
-            <p>
-              A csoportba való bekerülést díjmentes személyes egyéni beszélgetés
-              előzi meg: ismerkedés, kérdések tisztázása, közös munka
-              előkészítése.
-            </p>
-          </li>
+          <Link to="/latest" className="inline-block text-[#2f6f6b] underline">
+            Aktuális csoportjaink →
+          </Link>
 
-          <li className="flex gap-3">
-            <span className="text-heromenta font-bold">2.</span>
-            <p>
-              Az első két alkalom nyitott, a második alkalmon történik az
-              elköteleződés, utána zárt csoportként működünk.
-            </p>
-          </li>
-
-          <li className="flex gap-3">
-            <span className="text-heromenta font-bold">3.</span>
-            <p>
-              A találkozások 3 hetente zajlanak, fokozatosan mélyülő önismereti
-              folyamattal.
-            </p>
-          </li>
-
-          <li className="flex gap-3">
-            <span className="text-heromenta font-bold">4.</span>
-            <p>
-              A 18. alkalmon lezárjuk a folyamatot és összefoglaljuk az együtt
-              végzett munkát.
-            </p>
-          </li>
-        </ol>
-      </section>
-
-      {/* ---------------- KINEK AJÁNLJUK ---------------- */}
-      <section className="mb-10">
-        <h3 className="font-semibold mb-4">Várunk téged, ha</h3>
-        <MintChecklist />
-      </section>
-
-      {/* ---------------- JELENTKEZÉS ---------------- */}
-      <section className="mb-12">
-        <h3 className="font-semibold mb-2">Jelentkezés:</h3>
-
-        <ul className="list-disc list-inside space-y-1">
-          <li>e-mail: terkeponmagamhoz@gmail.com</li>
-          <li>telefon: Mohácsi Andrea – 30/383-9838</li>
-          <li>
-            Ha emailt írsz, adj meg pár információt magadról és feltétlenül
-            telefonszámot.
-          </li>
-          <li>
-            Kövess minket{" "}
-            <a
-              href="https://www.facebook.com/profile.php?id=100090615291518"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-quicksand text-blue-600 hover:underline"
-            >
-              Facebook
-            </a>{" "}
-            oldalunkon a friss információkért!
-          </li>
-          <li>
-            Ha szeretnél a hírlevelünkre feliratkozni, kattints{" "}
-            <a
-              href="/contact"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-quicksand text-blue-600 hover:underline"
-            >
-              ide
-            </a>{" "}
-            !
-          </li>
-        </ul>
-      </section>
-<section className="max-w-6xl mx-auto px-4 py-16">
-  <h2 className="text-4xl font-aboreto mb-12">Rólam mondták</h2>
-
-  <div className="grid md:grid-cols-3 gap-12 text-herodarkseablue">
-    {/* 1. vélemény */}
-    <div>
-      <p className="text-lg leading-relaxed">
-        "Andrea jelenléte biztonságot ad, vele könnyű megnyílni. 
-        A közös munkánk során olyan felismerésekhez jutottam, 
-        amelyek alapjaiban változtatták meg az életemhez való hozzáállásom."
-      </p>
-      <p className="mt-6 font-semibold">Katalin M.</p>
-    </div>
-
-    {/* 2. vélemény */}
-    <div>
-      <p className="text-lg leading-relaxed">
-        "A csoport légköre Andrea mellett támogató és megtartó. 
-        Mindig figyelmes, pontosan kérdez, és segít meglátni az összefüggéseket, 
-        amiket egyedül nem vettem volna észre."
-      </p>
-      <p className="mt-6 font-semibold">Dávid P.</p>
-    </div>
-
-    {/* 3. vélemény */}
-    <div>
-      <p className="text-lg leading-relaxed">
-        "A pszichodráma alkalmakon Andrea finoman, mégis határozottan vezetett. 
-        Felszabadító élmény volt olyan helyzeteket megélni és átírni, 
-        amelyek régóta bennem voltak. Hálás vagyok az egész folyamatért."
-      </p>
-      <p className="mt-6 font-semibold">Eszter L.</p>
-    </div>
-  </div>
-</section>
-
-      {/* ---------------- KÁRTYÁK RÉSZ ---------------- */}
-      <section className="space-y-10">
-        {/* 1. Kártya */}
-        <Card
-          image={Folyo}
-          title="Térképeink"
-          subtitle="180 órás pszichodráma csoport"
-          date="2025. májustól Budapesten"
-          link="/terkepeink"
-        />
-
-        {/* 2. Kártya */}
-        <Card
-          image={Pafrany}
-          title="Belső Tájakon, közös úton"
-          subtitle="180 órás pszichodráma csoport"
-          date="2026. februártól Budapesten"
-          link="/belso-tajakon"
-          reversed
-        />
-
-        {/* 3. Kártya */}
-        <Card
-          image={Erdo}
-          title="Mesejáró Térkép"
-          subtitle="Egynapos önismereti workshop"
-          date="2026. márciustól Budapesten"
-          link="/mesejaro-terkep"
-        />
-      </section>
-      <section className="mt-4">
-        <p>
-          <strong>Gyakran ismételt kérdések</strong>
-        </p>
-        <div className="ms-6">
-          <li>Lemondási feltételek</li>
-          <li>Fizetési módok</li>
-          <li>Bővebben a pszihodrámáról</li>
+          <p className="text-[#444] leading-relaxed">
+            Hogyan igazodunk el önmagunkban, kapcsolatainkban, életünkben, a
+            világban? <br /> Milyen belső térképek szerint haladunk – és mikor
+            érezzük, hogy új irányra van szükségünk?
+          </p>
         </div>
       </section>
-    </div>
-  );
-}
+      <section className="bg-[#f4f6f5] py-8 sm:py-20">
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 text-[#444] leading-relaxed">
+          <p>
+            Csoportjaink ebben az úton levésben kísérnek – hogy ne csak
+            elindulj, de meg is érkezz önmagadhoz. A csoport biztonságos,
+            megtartó tér, ahol lehetőség nyílik új minták és megoldások
+            kipróbálására.
+          </p>
 
-/* ---------------------------------------------  
-   KÁRTYA KOMPONENS  
----------------------------------------------- */
-function Card({ image, title, subtitle, date, link, reversed = false }) {
-  return (
-    <div
-      className={`flex flex-col md:flex-row ${
-        reversed ? "md:flex-row-reverse" : ""
-      }`}
-    >
-      <div className="md:w-1/2 h-64 md:h-auto">
-        <img src={image} className="w-full h-full object-cover" alt="" />
+          <p>
+            A csoport olyan tér, ahol nem vagy egyedül a történeteddel. A
+            kapcsolódás, a tükröződés és a közös jelenlét segít abban, hogy
+            láthatóvá válj – a saját tempódban, biztonságos keretek között.
+          </p>
+
+          <p>
+            A folyamat során lehetőséged van arra, hogy új módon találkozz
+            önmagaddal, és mélyebb megértést szerezz a működésedről.
+          </p>
+
+          <p>
+            A folyamatot biztonságos, elfogadó keretek között tartom, ahol
+            minden érzésnek, állapotnak és tapasztalatnak helye van.
+          </p>
+        </div>
+      </section>
+      <section className="py-8 sm:py-20">
+        <div className="max-w-3xl mx-auto px-6">
+          <h3 className="text-2xl font-serif text-[#2f6f6b] mb-10 text-center">
+            A folyamat
+          </h3>
+
+          <ol className="space-y-6 text-[#444] leading-relaxed">
+            <li>
+              <strong>1.</strong> A csoportba való bekerülést díjmentes
+              személyes egyéni beszélgetés előzi meg: ismerkedés, kérdések
+              tisztázása, közös munka előkészítése.
+            </li>
+            <li>
+              <strong>2.</strong> Az első két alkalom nyitott, a második
+              alkalmon történik az elköteleződés, utána zárt csoportként
+              működünk.
+            </li>
+            <li>
+              <strong>3.</strong> A találkozások csoporttól függően 2-4 hetente
+              zajlanak, fokozatosan mélyülő önismereti folyamattal.
+            </li>
+            <li>
+              <strong>4.</strong> Az utolsó alkalmon lezárjuk a folyamatot és
+              összefoglaljuk az együtt végzett munkát.
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section className="bg-[#e6efee] py-8 sm:py-20">
+        <div className="max-w-5xl mx-auto px-6">
+          <h3 className="text-2xl font-serif text-[#2f6f6b] mb-8 text-center">
+            Várunk téged, ha
+          </h3>
+          <div className="ps-8">
+            <MintChecklist />
+          </div>
+        </div>
+      </section>
+      <div className="max-w-3xl mx-auto">
+        <FAQGroup />
       </div>
+      <section className="bg-[#4f8f8a] text-white text-center py-8 sm:py-24">
+        <div className="max-w-xl mx-auto px-6">
+          <h3 className="text-2xl md:text-3xl font-serif mb-6">
+            Ha úgy érzed, megszólít ez az út, szeretettel várunk.
+          </h3>
 
-      <div className="md:w-1/2 bg-heromenta flex flex-col items-center justify-center text-center p-10">
-        <img src={Csillag} alt="" className="w-16 mb-3" />
-        <h2 className="text-4xl mb-2">{title}</h2>
-        <h3 className="mb-3">{subtitle}</h3>
-        <p>{date}</p>
-
-        <Link to={link} className="border-2 w-64 p-2 px-4 mt-4">
-          Részletek &gt;
-        </Link>
-      </div>
-    </div>
+          <Link
+            to="/latest"
+            className="inline-block bg-white text-[#2f6f6b] px-6 py-3 rounded-full hover:bg-[#f4f6f5] transition"
+          >
+            Aktuális csoportok
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }
