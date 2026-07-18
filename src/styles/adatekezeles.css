@@ -1,0 +1,331 @@
+/* ===========================
+   Privacy Policy
+=========================== */
+
+:root{
+    --primary:#355C55;
+    --primary-light:#E8F0ED;
+    --background:#FAFBFA;
+    --surface:#FFFFFF;
+    --text:#2D3436;
+    --muted:#6C757D;
+    --border:#E2E8E5;
+    --shadow:0 10px 35px rgba(0,0,0,.06);
+    --radius:18px;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    color:var(--text);
+    background:var(--background);
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    line-height:1.75;
+}
+
+/* ===========================
+   Layout
+=========================== */
+
+.privacy-page{
+    padding:80px 20px;
+}
+
+.privacy-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.privacy-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.privacy-header h1{
+    font-size:3rem;
+    color:var(--primary);
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.privacy-header p{
+    max-width:760px;
+    margin:auto;
+    color:var(--muted);
+    font-size:1.1rem;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.privacy-nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:60px;
+}
+
+.privacy-nav a{
+    text-decoration:none;
+    color:var(--primary);
+    background:white;
+    border:1px solid var(--border);
+    padding:10px 18px;
+    border-radius:50px;
+    transition:.25s;
+    font-size:.95rem;
+}
+
+.privacy-nav a:hover{
+    background:var(--primary);
+    color:white;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+.privacy-section{
+    background:var(--surface);
+    border-radius:var(--radius);
+    padding:40px;
+    margin-bottom:35px;
+    box-shadow:var(--shadow);
+}
+
+.privacy-section h2{
+    color:var(--primary);
+    margin-top:0;
+    margin-bottom:28px;
+    font-size:1.8rem;
+}
+
+.privacy-section p{
+    margin-bottom:18px;
+}
+
+/* ===========================
+   Info Grid
+=========================== */
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+}
+
+.info-grid div{
+    background:var(--primary-light);
+    padding:20px;
+    border-radius:14px;
+}
+
+.info-grid span{
+    display:block;
+    color:var(--muted);
+    font-size:.85rem;
+    margin-bottom:8px;
+}
+
+.info-grid strong,
+.info-grid a{
+    font-size:1rem;
+    color:var(--text);
+    text-decoration:none;
+    word-break:break-word;
+}
+
+.info-grid a:hover{
+    color:var(--primary);
+}
+
+/* ===========================
+   Table
+=========================== */
+
+.table-wrapper{
+    overflow-x:auto;
+}
+
+.privacy-table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:900px;
+}
+
+.privacy-table thead{
+    background:var(--primary);
+    color:white;
+}
+
+.privacy-table th{
+    padding:18px;
+    text-align:left;
+}
+
+.privacy-table td{
+    padding:18px;
+    border-bottom:1px solid var(--border);
+    vertical-align:top;
+}
+
+.privacy-table tbody tr:nth-child(even){
+    background:#F8FAF9;
+}
+
+.privacy-table tbody tr:hover{
+    background:#EEF5F2;
+}
+
+/* ===========================
+   Lists
+=========================== */
+
+.privacy-list{
+    padding-left:20px;
+}
+
+.privacy-list li{
+    margin-bottom:15px;
+}
+
+/* ===========================
+   Rights Cards
+=========================== */
+
+.rights-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;
+    margin:30px 0;
+}
+
+.right-card{
+    background:#F7FAF9;
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:25px;
+    transition:.25s;
+}
+
+.right-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 22px rgba(0,0,0,.08);
+}
+
+.right-card h3{
+    margin-top:0;
+    color:var(--primary);
+}
+
+/* ===========================
+   Notice
+=========================== */
+
+.notice{
+    background:var(--primary-light);
+    border-left:5px solid var(--primary);
+    padding:18px 22px;
+    border-radius:10px;
+    margin-top:30px;
+}
+
+/* ===========================
+   Contact Box
+=========================== */
+
+.contact-box{
+    margin-top:25px;
+    padding:28px;
+    background:#F7FAF9;
+    border-radius:16px;
+    border:1px solid var(--border);
+}
+
+.contact-box p{
+    margin:8px 0;
+}
+
+.contact-box a{
+    color:var(--primary);
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* ===========================
+   Footer Box
+=========================== */
+
+.last-update{
+    margin-top:35px;
+    padding:18px;
+    text-align:center;
+    background:var(--primary);
+    color:white;
+    border-radius:12px;
+    font-size:.95rem;
+}
+
+/* ===========================
+   Links
+=========================== */
+
+a{
+    transition:.25s;
+}
+
+a:hover{
+    opacity:.8;
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+    .privacy-page{
+        padding:40px 15px;
+    }
+
+    .privacy-header h1{
+        font-size:2.2rem;
+    }
+
+    .privacy-section{
+        padding:28px;
+    }
+
+    .privacy-nav{
+        justify-content:flex-start;
+    }
+
+    .privacy-nav a{
+        width:100%;
+        text-align:center;
+    }
+
+    .rights-grid{
+        grid-template-columns:1fr;
+    }
+
+}

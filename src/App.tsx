@@ -7,6 +7,7 @@ import Group from "./pages/Group.js";
 import Latest from "./pages/Latest.js";
 import Contact from "./pages/Contact.js";
 import GroupDetailPage from "./pages/GroupDetailPage.js";
+import Adatkezeles from "./pages/Adatkezeles.js";
 import "./App.css";
 
 const router = createBrowserRouter([
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "/group/:slug", element: <GroupDetailPage /> },
       { path: "/latest", element: <Latest /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/adatkezelesi-tajekoztato", element: <Adatkezeles /> },
       { path: "*", element: <div>Not found</div> },
     ],
   },
