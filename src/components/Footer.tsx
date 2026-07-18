@@ -74,7 +74,7 @@ export default function Footer() {
             <a href="#" className="hover:underline">
               Impresszum
             </a>
-            <a href="#" className="hover:underline">
+            <a href="/adatkezelesi-tajekoztato" className="hover:underline">
               Adatvédelem
             </a>
           </div>
