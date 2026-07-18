@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="bg-[#f4f6f5] text-[#444] mt-0 sm:mt-20">
@@ -74,9 +76,9 @@ export default function Footer() {
             <a href="#" className="hover:underline">
               Impresszum
             </a>
-            <a href="/adatkezelesi-tajekoztato" className="hover:underline">
+            <Link to="/adatkezelesi-tajekoztato" className="hover:underline">
               Adatvédelem
-            </a>
+            </Link>
           </div>
         </div>
       </div>
