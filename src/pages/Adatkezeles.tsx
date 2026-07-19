@@ -12,7 +12,8 @@ const dataProcessing = [
     activity: "Egyéni konzultáció",
     data: "Kapcsolattartási adatok, időpontok, kliensjegyzetek",
     purpose: "Segítő folyamat",
-    legal: "Szerződés előkészítése és teljesítése, szükség szerint hozzájárulás",
+    legal:
+      "Szerződés előkészítése és teljesítése, szükség szerint hozzájárulás",
     retention: "A lezárást követő 5 év",
   },
   {
@@ -49,7 +50,6 @@ export default function PrivacyPolicy() {
   return (
     <main className="privacy-page">
       <div className="privacy-container">
-
         <header className="privacy-header">
           <h1>Adatkezelési tájékoztató</h1>
           <p>
@@ -74,7 +74,6 @@ export default function PrivacyPolicy() {
           <h2>1. Az adatkezelő adatai</h2>
 
           <div className="info-grid">
-
             <div>
               <span>Név</span>
               <strong>Mohácsi Andrea egyéni vállalkozó</strong>
@@ -82,9 +81,7 @@ export default function PrivacyPolicy() {
 
             <div>
               <span>Székhely</span>
-              <strong>
-                1147 Budapest, Zsolnay V. u. 9. III/4.
-              </strong>
+              <strong>1147 Budapest, Zsolnay V. u. 9. III/4.</strong>
             </div>
 
             <div>
@@ -106,9 +103,7 @@ export default function PrivacyPolicy() {
 
             <div>
               <span>Telefon</span>
-              <a href="tel:+36303839838">
-                +36 30 383 9838
-              </a>
+              <a href="tel:+36303839838">+36 30 383 9838</a>
             </div>
 
             <div>
@@ -121,7 +116,6 @@ export default function PrivacyPolicy() {
                 www.mohacsiandrea.hu
               </a>
             </div>
-
           </div>
         </section>
 
@@ -129,7 +123,6 @@ export default function PrivacyPolicy() {
           <h2>2. A kezelt adatok és az adatkezelés célja</h2>
 
           <div className="table-wrapper">
-
             <table className="privacy-table">
               <thead>
                 <tr>
@@ -152,9 +145,7 @@ export default function PrivacyPolicy() {
                   </tr>
                 ))}
               </tbody>
-
             </table>
-
           </div>
         </section>
 
@@ -162,9 +153,9 @@ export default function PrivacyPolicy() {
           <h2>3. Kliensjegyzetek</h2>
 
           <p>
-            A szakmai jegyzetek papíralapon készülnek, az adatkezelő
-            székhelyén, zárható szekrényben kerülnek megőrzésre.
-            A jegyzetekhez kizárólag az adatkezelő fér hozzá.
+            A szakmai jegyzetek papíralapon készülnek, az adatkezelő székhelyén,
+            zárható szekrényben kerülnek megőrzésre. A jegyzetekhez kizárólag az
+            adatkezelő fér hozzá.
           </p>
         </section>
 
@@ -172,15 +163,14 @@ export default function PrivacyPolicy() {
           <h2>4. Titoktartás</h2>
 
           <p>
-            A konzultációkon elhangzott információk bizalmasak.
-            Szakmai szupervízió során kizárólag anonimizált
-            esetmegbeszélés történik, amelyet titoktartási
-            kötelezettség terhel.
+            A konzultációkon elhangzott információk bizalmasak. Szakmai
+            szupervízió során kizárólag anonimizált esetmegbeszélés történik,
+            amelyet titoktartási kötelezettség terhel.
           </p>
         </section>
 
         {/* Folytatás a következő részben */}
-         <section id="adatfeldolgozok" className="privacy-section">
+        <section id="adatfeldolgozok" className="privacy-section">
           <h2>5. Adatfeldolgozók</h2>
 
           <p>
@@ -190,7 +180,11 @@ export default function PrivacyPolicy() {
 
           <ul className="privacy-list">
             <li>
-              <strong>Tárhelyszolgáltató:</strong> <em>[KITÖLTENDŐ]</em>
+              <strong>Tárhelyszolgáltató:</strong>{" "}
+              <em>
+                Netlify, Inc. 44 Montgomery Street, Suite 300, San Francisco, CA
+                94104, USA https://www.netlify.com
+              </em>
             </li>
 
             <li>
@@ -198,7 +192,8 @@ export default function PrivacyPolicy() {
             </li>
 
             <li>
-              <strong>Google</strong> – Google Naptár, szükség esetén Google Meet
+              <strong>Google</strong> – Google Naptár, szükség esetén Google
+              Meet
             </li>
 
             <li>
@@ -219,11 +214,11 @@ export default function PrivacyPolicy() {
           <h2>6. Az érintettek jogai</h2>
 
           <p>
-            Az érintettet a GDPR rendelkezései alapján az alábbi jogok illetik meg:
+            Az érintettet a GDPR rendelkezései alapján az alábbi jogok illetik
+            meg:
           </p>
 
           <div className="rights-grid">
-
             <div className="right-card">
               <h3>Hozzáférés</h3>
               <p>
@@ -241,9 +236,7 @@ export default function PrivacyPolicy() {
 
             <div className="right-card">
               <h3>Törlés</h3>
-              <p>
-                Bizonyos esetekben kérheti személyes adatainak törlését.
-              </p>
+              <p>Bizonyos esetekben kérheti személyes adatainak törlését.</p>
             </div>
 
             <div className="right-card">
@@ -269,14 +262,12 @@ export default function PrivacyPolicy() {
                 a korábbi adatkezelés jogszerűségét.
               </p>
             </div>
-
           </div>
 
           <p className="notice">
             Az adatkezelő a beérkezett kérelmeket indokolatlan késedelem nélkül,
             de legkésőbb egy hónapon belül megválaszolja.
           </p>
-
         </section>
 
         <section id="jogorvoslat" className="privacy-section">
@@ -285,12 +276,14 @@ export default function PrivacyPolicy() {
           <p>
             Amennyiben úgy érzi, hogy személyes adatainak kezelése nem felel meg
             a hatályos jogszabályoknak, panasszal fordulhat a
-            <strong> Nemzeti Adatvédelmi és Információszabadság Hatósághoz (NAIH)</strong>,
-            illetve bírósági jogorvoslatot is kezdeményezhet.
+            <strong>
+              {" "}
+              Nemzeti Adatvédelmi és Információszabadság Hatósághoz (NAIH)
+            </strong>
+            , illetve bírósági jogorvoslatot is kezdeményezhet.
           </p>
 
           <div className="contact-box">
-
             <p>
               <strong>NAIH</strong>
             </p>
@@ -308,7 +301,6 @@ export default function PrivacyPolicy() {
                 www.naih.hu
               </a>
             </p>
-
           </div>
         </section>
 
@@ -329,9 +321,7 @@ export default function PrivacyPolicy() {
           <div className="last-update">
             <strong>Hatályos:</strong> 2026. július 18.
           </div>
-
         </section>
-
       </div>
     </main>
   );

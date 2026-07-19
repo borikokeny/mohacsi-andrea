@@ -8,14 +8,14 @@ export default function Contact() {
 
       <div className="text-center max-w-3xl mx-auto">
         <h1 className="text-4xl font-aboreto text-[#48969f]">Kapcsolat</h1>
-        <div className="w-20 h-[2px] bg-gray-300 mx-auto mt-5"></div>
+        <div className="w-20 h-[2px] bg-gray-500 mx-auto mt-5"></div>
         <p className="mt-5 text-xl text-herodarkseablue leading-relaxed">
           Ha kérdése van, szeretne jelentkezni egyéni folyamatra vagy csoportra,
           illetve szeretne többet megtudni a lehetőségekről, keressen
           bizalommal.
         </p>
 
-        {/* <div className="w-20 h-[2px] bg-heromenta mx-auto mt-10"></div> */}
+  
       </div>
       <div></div>
       <div className="mt-10 grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
@@ -26,17 +26,13 @@ export default function Contact() {
             Hidak Önmagunkhoz hírlevél
           </h2>
 
-          {/* <p className="text-center font-semibold text-gray-800 mb-6">
-            Szeretne elsőként értesülni az induló programokról?
-          </p> */}
-
           <p className="text-center text-gray-700 leading-relaxed">
             Időről időre új önismereti csoportokat, pszichodráma alkalmakat,
             workshopokat, valamint szakmai írásokat és gondolatokat osztok meg.
           </p>
 
           <p className="text-center text-gray-700 leading-relaxed font-semibold mt-6 mb-10">
-            Ha szeretne ezekről elsőként értesülni, iratkozzon fel a hírlevélre.
+            Ha szeretne ezekről elsőként értesülni, iratkozzon fel a értesítőre.
           </p>
 
           <form className="flex flex-col gap-4">
@@ -68,7 +64,7 @@ export default function Contact() {
         {/* ================= JOBB OLDAL ================= */}
 
         <div className="space-y-8">
-          <h2 className="text-3xl font-aboreto text-center text-[#48969f]">
+          <h2 className="text-3xl mt-10 font-aboreto text-center text-[#48969f]">
             Elérhetőségek
           </h2>
 
@@ -103,7 +99,7 @@ export default function Contact() {
           {/* KÖZÖSSÉGI MÉDIA */}
 
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-            <h3 className="text-xl font-semibold text-center text-[#48969f] mb-6">
+            <h3 className="text-xl  text-center text-[#48969f] mb-6">
               Szeretettel várom online is!
             </h3>
 
@@ -115,7 +111,6 @@ export default function Contact() {
                 className="group text-center"
               >
                 <div className="w-14 h-14 rounded-full bg-[#e9f5f4] flex items-center justify-center mx-auto group-hover:bg-heromenta transition">
-                  {/* Facebook ikon */}
 
                   <FontAwesomeIcon
                     icon={faFacebook}
@@ -133,7 +128,7 @@ export default function Contact() {
                 className="group text-center"
               >
                 <div className="w-14 h-14 rounded-full bg-[#e9f5f4] flex items-center justify-center mx-auto group-hover:bg-heromenta transition">
-                  {/* Instagram ikon */}
+            
                   <FontAwesomeIcon
                     icon={faInstagram}
                     className="text-herodarkseablue group-hover:text-white transition"

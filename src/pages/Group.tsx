@@ -48,7 +48,10 @@ export default function Group() {
           <Link to="/latest" className="inline-block text-[#2f6f6b] underline">
             Aktuális csoportjaink →
           </Link>
-
+          <p>Szeretne értesülni az induló csoportokról és programokról?</p>
+          <Link rel="stylesheet" to="/contact" className="text-[#2f6f6b]">
+            Hidak Önmagunkhoz Hírlevél
+          </Link>
           <p className="text-[#444] leading-relaxed">
             Hogyan igazodunk el önmagunkban, kapcsolatainkban, életünkben, a
             világban? <br /> Milyen belső térképek szerint haladunk – és mikor
