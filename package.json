@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^16.1.6",
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-brands-svg-icons": "^7.3.1",
+    "@fortawesome/react-fontawesome": "^3.4.0",
     "contentful": "^11.9.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
