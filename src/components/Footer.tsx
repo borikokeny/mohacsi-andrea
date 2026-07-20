@@ -40,8 +40,20 @@ export default function Footer() {
       {/* ALSÓ SOR */}
       <div className="border-t border-[#e0e0e0]">
         <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-[#777] gap-4">
-          <p>© {new Date().getFullYear()} Mohácsi Andrea</p>
-
+          <p>
+            © {new Date().getFullYear()} Mohácsi Andrea – Minden jog fenntartva.
+          </p>
+          <p>
+            Weboldal fejlesztése:{" "}
+            <a
+              href="https://borikokeny.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-serif hover:text-[#2f6f6b] transition"
+            >
+              Kökény Bori
+            </a>
+          </p>
           <div className="flex gap-4">
             <a href="#" className="hover:underline">
               Impresszum
