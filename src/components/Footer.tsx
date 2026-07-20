@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="bg-[#f4f6f5] text-[#444] mt-0 sm:mt-20">
-      <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-12">
+      <div className="max-w-6xl mx-auto px-6 py-8 md:py-16 grid md:grid-cols-3 gap-6 md:gap-12">
         {/* BAL – BRAND */}
         <div className="space-y-4">
           <h3 className="font-serif text-lg text-[#2f6f6b]">Mohácsi Andrea</h3>
@@ -14,37 +14,7 @@ export default function Footer() {
         </div>
 
         {/* KÖZÉP – NAV */}
-        <div className="space-y-3 text-sm">
-          {/* <p className="font-medium text-[#2f6f6b]">Oldalak</p>
-
-          <ul className="space-y-2">
-            <li>
-              <a href="/" className="hover:underline">
-                Főoldal
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="hover:underline">
-                Rólam
-              </a>
-            </li>
-            <li>
-              <a href="/individual" className="hover:underline">
-                Egyéni folyamatok
-              </a>
-            </li>
-            <li>
-              <a href="/group" className="hover:underline">
-                Csoportok
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="hover:underline">
-                Kapcsolat
-              </a>
-            </li>
-          </ul> */}
-        </div>
+        <div className="space-y-3 text-sm"></div>
 
         {/* JOBB – KAPCSOLAT */}
         <div className="space-y-3 text-sm">

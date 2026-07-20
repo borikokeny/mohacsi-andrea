@@ -100,45 +100,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* <section className="min-h-[35vh] md:h-[40vh] grid md:grid-cols-[2fr_1fr] items-center bg-gradient-to-br from-[#7fb7b2] via-[#5f9f9a] to-[#3f7f7b]">
-    
-        <div className="px-6 md:px-12 lg:px-20 py-10 md:py-12 text-left">
-          <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium leading-tight text-gray-900 max-w-xl">
-            Biztonságos tér a valódi változáshoz
-          </h1>
-
-          <p className="text-base md:text-lg mb-8 leading-relaxed text-white/90 max-w-xl mt-3">
-            Egyéni és csoportos folyamatok azoknak, akik szeretnének jobban
-            kapcsolódni önmagukhoz, tisztábban érezni, mire van szükségük és
-            megtanulni képviselni magukat kapcsolataikban.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link
-              to="/individual"
-              className="bg-[#2f6f6b] text-white px-6 py-3 rounded-full hover:bg-[#275e5a] transition"
-            >
-              Egyéni folyamatok
-            </Link>
-
-            <Link
-              to="/group"
-              className="border border-white/60 text-white px-6 py-3 rounded-full hover:bg-white/10 transition"
-            >
-              Csoportos lehetőségek
-            </Link>
-          </div>
-        </div>
-
-        
-        <div className="h-[300px] md:h-full">
-          <img
-            src={Portre_home}
-            alt="hero"
-            className="w-full h-full object-cover object-center"
-          />
-        </div>
-      </section> */}
-
       {/* SUPPORT */}
       <section className="bg-[#f4f6f5] py-5 sm:py-20 px-6">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 sm:gap-16 items-center">
@@ -230,193 +191,132 @@ export default function HomePage() {
         </div>
       </section>
       <section className="max-w-5xl mx-auto px-6 py-20">
+        {/* ---------- CÍM ---------- */}
 
-  {/* ---------- CÍM ---------- */}
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-4xl font-aboreto mb-6">
+            Miért Hidak Önmagunkhoz?
+          </h2>
 
-  <div className="text-center max-w-3xl mx-auto">
-    <h2 className="text-4xl font-aboreto mb-6">
-      Miért Hidak Önmagunkhoz?
-    </h2>
+          <p className="text-xl font-aboreto">
+            A híd számomra a kapcsolódás szimbóluma
+          </p>
 
-    <p className="text-xl font-aboreto">
-      A híd számomra a kapcsolódás szimbóluma
-    </p>
+          <p className="mt-4 text-lg font-aboreto tracking-wide">
+            Kapcsolódás önmagunkhoz, másokhoz és a minket körülvevő világhoz
+          </p>
 
-    <p className="mt-4 text-lg font-aboreto tracking-wide">
-      Kapcsolódás önmagunkhoz,
-      másokhoz és a minket körülvevő világhoz
-    </p>
-
-    <div className="w-10 h-10 mx-auto mt-6">
-      <img
+          <div className="w-10 h-10 mx-auto mt-6">
+            <img
               src={Logo}
               alt="Logo"
               className=" object-cover object-top opacity-80"
             />
-    </div>
-     <div className="w-24 h-[2px] bg-[#5f9f98] mx-auto mt-10"></div>
-  </div>
+          </div>
+          <div className="w-24 h-[2px] bg-[#5f9f98] mx-auto mt-10"></div>
+        </div>
 
+        {/* ---------- ELSŐ GONDOLAT ---------- */}
 
-  {/* ---------- ELSŐ GONDOLAT ---------- */}
-
-  <div className="max-w-3xl mx-auto mt-10">
-
-    <p className="text-4xl text-herodarkseablue 
+        <div className="max-w-3xl mx-auto mt-10">
+          <p
+            className="text-4xl text-herodarkseablue 
 leading-snug
 max-w-4xl
-text-center">
-      Hiszem, hogy az önismeret nem egyetlen nagy felismerés,
-      hanem sok apró átkelés egymás után.
-    </p>
+text-center"
+          >
+            Hiszem, hogy az önismeret nem egyetlen nagy felismerés, hanem sok
+            apró átkelés egymás után.
+          </p>
 
-    <p className="mt-8 text-lg leading-loose text-gray-700">
-      Vannak hidak, amelyeken könnyedén haladunk végig,
-      és vannak olyanok is, amelyek ijesztő mélységek felett vezetnek.
-      Előfordul, hogy bizonytalanul lépünk rájuk,
-      nem tudjuk, elbírnak-e bennünket,
-      vagy mi vár a túloldalon.
-    </p>
+          <p className="mt-8 text-lg leading-loose text-gray-700">
+            Vannak hidak, amelyeken könnyedén haladunk végig, és vannak olyanok
+            is, amelyek ijesztő mélységek felett vezetnek. Előfordul, hogy
+            bizonytalanul lépünk rájuk, nem tudjuk, elbírnak-e bennünket, vagy
+            mi vár a túloldalon.
+          </p>
+        </div>
 
-  </div>
+        {/* ---------- KÉT HASÁB ---------- */}
 
+        <div className="grid lg:grid-cols-2 gap-20 mt-24">
+          <div>
+            <h3 className="text-2xl font-aboreto mb-6 text-[#2f6f6b]">
+              A kísérés számomra...
+            </h3>
 
-  {/* ---------- KÉT HASÁB ---------- */}
+            <p className="leading-loose text-lg text-gray-700">
+              Segítő szakemberként abban szeretnék társ lenni, hogy ezeket a
+              hidakat ne egyedül kelljen bejárni.
+              <br />
+              <br />
+              Van, amikor elég, ha valaki mellettünk halad.
+              <br />
+              <br />
+              Van, amikor szükség van egy megtartó jelenlétre.
+              <br />
+              <br />
+              És van, amikor közösen építjük fel azt a hidat, amelyen később már
+              önállóan is biztonsággal át lehet kelni.
+            </p>
+          </div>
 
-  <div className="grid lg:grid-cols-2 gap-20 mt-24">
+          <div>
+            <h3 className="text-2xl font-aboreto mb-6 text-[#2f6f6b]">
+              A logó üzenete
+            </h3>
 
-    <div>
+            <p className="leading-loose text-lg text-gray-700">
+              A logóban megjelenő víz a változás és az élet áramlását idézi.
+              <br />
+              <br />
+              A belőle kibontakozó növény a fejlődés, a növekedés és az új
+              lehetőségek jelképe.
+              <br />
+              <br />A híd mindezt összeköti: emlékeztet arra, hogy a fejlődés
+              nem elszakadás, hanem egyre mélyebb kapcsolódás önmagunkhoz,
+              másokhoz és a világhoz.
+            </p>
+          </div>
+        </div>
 
-      <h3 className="text-2xl font-aboreto mb-6 text-[#2f6f6b]">
-        A kísérés számomra...
-      </h3>
+        {/* ---------- TÜRKIZ BLOKK ---------- */}
 
-      <p className="leading-loose text-lg text-gray-700">
-        Segítő szakemberként abban szeretnék társ lenni,
-        hogy ezeket a hidakat ne egyedül kelljen bejárni.
+        <div className="mt-24 bg-[#eef6f5] rounded-3xl p-10">
+          <h3 className="text-2xl font-aboreto text-center text-[#2f6f6b] mb-8">
+            Mit jelent számomra a türkiz?
+          </h3>
 
-        <br /><br />
+          <p className="max-w-3xl mx-auto text-center leading-loose text-lg text-gray-700">
+            A logó türkiz színe számomra az integráció, az egyensúly, az
+            összekapcsolódás és a teljesség felé vezető fejlődés szimbóluma.
+            <br />
+            <br />
+            Olyan szemléletet képvisel, amelyben a test, a psziché, a
+            gondolatok, az érzelmek és a kapcsolataink egymással összefüggő
+            rendszert alkotnak.
+          </p>
+        </div>
 
-        Van, amikor elég,
-        ha valaki mellettünk halad.
+        {/* ---------- ZÁRÓ IDÉZET ---------- */}
 
-        <br /><br />
+        <div className="max-w-3xl mx-auto mt-14 md:mt-24 text-center">
+          <p className="text-3xl text-herodarkseablue leading-relaxed italic">
+            „Hiszem, hogy mindannyiunk életében vannak olyan időszakok, amikor
+            jól jön egy kísérő a hídon.”
+          </p>
 
-        Van, amikor szükség van egy megtartó jelenlétre.
-
-        <br /><br />
-
-        És van,
-        amikor közösen építjük fel azt a hidat,
-        amelyen később már önállóan is
-        biztonsággal át lehet kelni.
-      </p>
-
-    </div>
-
-
-
-    <div>
-
-      <h3 className="text-2xl font-aboreto mb-6 text-[#2f6f6b]">
-        A logó üzenete
-      </h3>
-
-      <p className="leading-loose text-lg text-gray-700">
-
-        A logóban megjelenő víz
-        a változás és az élet áramlását idézi.
-
-        <br /><br />
-
-        A belőle kibontakozó növény
-        a fejlődés,
-        a növekedés
-        és az új lehetőségek jelképe.
-
-        <br /><br />
-
-        A híd mindezt összeköti:
-        emlékeztet arra,
-        hogy a fejlődés nem elszakadás,
-        hanem egyre mélyebb kapcsolódás
-        önmagunkhoz,
-        másokhoz
-        és a világhoz.
-
-      </p>
-
-    </div>
-
-  </div>
-
-
-
-  {/* ---------- TÜRKIZ BLOKK ---------- */}
-
-  <div className="mt-24 bg-[#eef6f5] rounded-3xl p-10">
-
-    <h3 className="text-2xl font-aboreto text-center text-[#2f6f6b] mb-8">
-      Mit jelent számomra a türkiz?
-    </h3>
-
-    <p className="max-w-3xl mx-auto text-center leading-loose text-lg text-gray-700">
-
-      A logó türkiz színe számomra
-      az integráció,
-      az egyensúly,
-      az összekapcsolódás
-      és a teljesség felé vezető fejlődés
-      szimbóluma.
-
-      <br /><br />
-
-      Olyan szemléletet képvisel,
-      amelyben a test,
-      a psziché,
-      a gondolatok,
-      az érzelmek
-      és a kapcsolataink
-      egymással összefüggő rendszert alkotnak.
-
-    </p>
-
-  </div>
-
-
-
-  {/* ---------- ZÁRÓ IDÉZET ---------- */}
-
-  <div className="max-w-3xl mx-auto mt-24 text-center">
-
-    <p className="text-3xl text-herodarkseablue leading-relaxed italic">
-
-      „Hiszem, hogy mindannyiunk életében
-      vannak olyan időszakok,
-      amikor jól jön egy kísérő a hídon.”
-
-    </p>
-
-    <p className="mt-10 text-xl leading-loose text-gray-700">
-
-      Nem azért,
-      hogy helyettünk menjen át,
-
-      <br /><br />
-
-      hanem hogy mellettünk legyen,
-
-      <br /><br />
-
-      amíg megtaláljuk
-      a saját lépéseinket.
-
-    </p>
-
-  </div>
-
-</section>
-      
+          <p className="mt-10 text-xl leading-loose text-gray-700">
+            Nem azért, hogy helyettünk menjen át,
+            <br />
+            <br />
+            hanem hogy mellettünk legyen,
+            <br />
+            <br />
+            amíg megtaláljuk a saját lépéseinket.
+          </p>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="text-center py-10 sm:py-24 px-6 bg-[#5f9f9a] text-white/90">

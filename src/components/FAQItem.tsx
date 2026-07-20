@@ -11,7 +11,6 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
 
   return (
     <div className="border-b border-gray-200 py-5">
-
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex justify-between items-center text-left"
@@ -36,7 +35,6 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
           {answer}
         </div>
       </div>
-
     </div>
   );
 }

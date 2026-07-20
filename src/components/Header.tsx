@@ -62,7 +62,7 @@ export default function Header() {
 
       {/* 🔥 FULLSCREEN MOBILE MENU */}
       {menuOpen && (
-        <div className="fixed inset-0 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-center text-center z-40">
+        <div className="fixed inset-0 bg-white/95 backdrop-blur-sm flex flex-col items-center justify-start pt-24 text-center z-40">
 
           <nav className="flex flex-col gap-6 text-xl font-medium text-[#5a6f6b]">
 

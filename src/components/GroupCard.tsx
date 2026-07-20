@@ -43,7 +43,7 @@ export default function GroupCard({
     full: {
       label: "Betelt",
       color: "bg-red-100 text-red-700",
-      button: "Értesítést kérek",
+      button: "Bővebben",
     },
   };
 

@@ -1,9 +1,3 @@
-/**
- * MintChecklist
- * - Tailwind CSS osztályokat használ (a te configodban van `heromenta`).
- * - Mobilon és asztalon is jól néz ki, accessible markup (role/list).
- */
-
 const items = [
   "érdekel, hogy mik akadályoznak és mely erőforrásaid segítenek céljaid elérésében",
   "szeretnéd megismerni kapcsolati mintázataidat, kiegyensúlyozottabb kapcsolatokra vágysz",
@@ -25,10 +19,8 @@ export default function MintChecklist({
   useStar?: boolean;
   className?: string;
 }) {
-  // Icon: pipa (default) vagy csillag (useStar=true)
   const Icon = () =>
     useStar ? (
-      // csillag ikon
       <svg
         aria-hidden="true"
         width="18"
@@ -40,7 +32,6 @@ export default function MintChecklist({
         <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.17L12 18.896 4.664 23.167l1.402-8.17L.132 9.21l8.2-1.192z" />
       </svg>
     ) : (
-      // pipa ikon
       <svg
         aria-hidden="true"
         width="18"
@@ -65,7 +56,6 @@ export default function MintChecklist({
     >
       {items.map((text, i) => (
         <li key={i} className="flex items-start gap-4">
-          {/* ikon körben */}
           <span
             className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-heromenta bg-black/40 mt-1"
             aria-hidden="true"
@@ -74,10 +64,7 @@ export default function MintChecklist({
             <Icon />
           </span>
 
-          {/* szöveg */}
-          <span className="text-base leading-relaxed">
-            {text}
-          </span>
+          <span className="text-base leading-relaxed">{text}</span>
         </li>
       ))}
     </ul>
